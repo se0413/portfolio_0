@@ -2,3 +2,63 @@
 @import url(fonts.css);
 @import url(common.css);
 @import url(layout.css);
+
+#fp-nav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid #282119;
+    border-radius: 50%;
+}
+#fp-nav.fp-show-active a.active + .fp-tooltip,
+#fp-nav ul li .fp-tooltip {
+    font-family: 'ghanachoco';
+    color: #282119;
+}
+.main {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/main_bg.png);
+    position: relative;
+}
+.main h1 {
+    font-size: 0;
+    line-height: 0;
+}
+.main .recode .photo1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 6s linear infinite;
+}
+.main .recode .photo2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+/* .main .recode .photo2::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/recode_stick.png);
+    content: "";
+} */
+@keyframes rotate {
+    100% {transform: translate(-50%, -50%) rotate(360deg);}
+}

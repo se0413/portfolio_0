@@ -4,15 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="portfolio/js/jquery-3.7.1.min.js"></script>
-    <script src="portfolio/js/main.js"></script>
+    <script src="portfolio/js/fullpage.min.js"></script> <!--풀 페이지 js-->
+    <link rel="stylesheet" href="portfolio/css/fullpage.css"> <!--풀 페이지 css-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="portfolio/js/main.js"></script>
     <link rel="stylesheet" href="portfolio/css/main.css">
     <title>Portfolio</title>
 </head>
 <body>
-    
+    <div id="fullpage">
+        <section class="section fp-auto-height-responsive main"> 
+            <h1>main</h1>
+            <div class="recode">
+                <div class="photo1"><img src="portfolio/images/recode.png" alt="레코드 그림"></div>
+                <div class="photo2"><img src="portfolio/images/mypalette_txt.png" alt="my palette"></div>
+            </div>
+        </section>
+        <section class="section fp-auto-height-responsive iam"> 
+            <h1>i am</h1>
+            <div class="iam_l">
+                <div class="top">
+                    <ul>
+                        <li>
+                            <strong>Profile</strong>
+                            <ul>
+                                <li>황시은</li>
+                                <li>1999.04.13</li>
+                                <li>010-6348-0771</li>
+                                <li>tldms7133@naver.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Education</strong>
+                            <ul>
+                                <li>
+                                    <span>2021.02</span>
+                                    <strong>충북보건과학대학교 작업치료과 졸업</strong>
+                                </li>
+                                <li>
+                                    <span>2024.04~2024.09</span>
+                                    <strong>이지디자인 컴퓨터 학원 멀티미디어  웹앱디자인&웹퍼블리셔 및 영상콘텐츠 제작과정 수료</strong>
+                                </li>
+                                <li>010-6348-0771</li>
+                                <li>tldms7133@naver.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Profile</strong>
+                            <ul>
+                                <li>황시은</li>
+                                <li>1999.04.13</li>
+                                <li>010-6348-0771</li>
+                                <li>tldms7133@naver.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iam_r"></div>
+        </section>
+    </div>
 </body>
 </html>

@@ -1,44 +1,27 @@
 $(document).ready(function(){
+	const myFullpage = new fullpage('#fullpage', {  /* html에서 페이지 전체를 감싸는 요소 */
 
-	// let menuName = $('.header')  // 상단에 고정할 메뉴 영역 선택자
-	// let menuItem = $('.header ul li') // data-link 값을 준 클릭할 요소의 선택자
-	// let sectionName
-	// let moveTop
-	// let areaTop
-	// let areaH
-	// let areaName
-	// let scrollTop
-	// menuItem.on('click', function(){
-	// 	sectionName = $(this).attr('data-link')
-	// 	moveTop = $('*[data-menu="'+sectionName+'"]').offset().top - menuName.height()
-	// 	$('html, body').animate({
-	// 		scrollTop : moveTop
-	// 	}, 500)
-	// })
-	// menuChk()
-	// $(window).scroll(function(){
-	// 	menuChk()
-	// })
-	// function menuChk(){
-	// 	scrollTop = $(window).scrollTop()
-	// 	$.each($('*[data-menu]'), function(idx, item){
-	// 		areaTop = $('*[data-menu]').eq(idx).offset().top
-	// 		areaH = $('*[data-menu]').eq(idx).height()
-	// 		areaName = $('*[data-menu]').eq(idx).attr('data-menu')
-	// 		if((scrollTop >= areaTop - menuName.height()) && (scrollTop < areaTop + areaH - menuName.height())){
-	// 			menuItem.removeClass('active')
-	// 			menuItem.siblings('[data-link="'+areaName+'"]').addClass('active')
-	// 		}else if(scrollTop < $('*[data-menu]').first().offset().top){
-	// 			menuItem.removeClass('active')
-	// 		}else if(scrollTop > $('*[data-menu]').last().offset().top + $('*[data-menu]').last().height()){
-	// 			menuItem.removeClass('active')
-	// 		}
-	// 	});
-	// }
+		navigation: true, /* 오른쪽에 각 페이지의 paging */
+		navigationPosition: 'left', /* 위치 */
+		navigationTooltips: ['MAIN', 'I AM', 'Project1', 'Project2','Project3','Project4'], /* 툴팁 */
+		showActiveTooltip: true, /* 현재 활성화된 페이지의 툴팁에 특정 클래스 주기 */
+		
+		lockAnchors: true,
+		anchors: ['link1', 'link2', 'link3', 'link4'], /* href="#link1" 이렇게 코딩하면 해당 링크명으로 이동 */
 
-	// AOS.init({
-    //     offset: 400, // 해당 콘텐츠가 하단에서 몇 px 위로 올라와에 나타나는 효과가 나타날지 셋팅하는 값
-    //     duration: 850, // 애니메이션 효과가 작동되는 시간
-    //     easing: 'linear', // 가속도
-    // });
+		autoScrolling:true, /* 한페이지씩 스크롤 */
+		scrollHorizontally: true,
+
+		verticalCentered: true, /* 컨텐츠 요소 위아래 가운데 */
+		
+		scrollOverflow: false, /* 컨텐츠가 넘쳐도 스크롤 금지 */
+
+		afterLoad: function(origin, destination, direction, trigger){
+			if(destination.index == 2){ /* index가 2면 슬라이드는 세번째 슬라이드입니다. index 수는 0/1/2/3 */
+				console.log('3번째 슬라이드가 로딩 되었을때');
+			}
+		},
+
+		responsiveWidth: 640 /* fullpage를 적용시키지 않을 모바일 사이즈 */
+	});
 })
