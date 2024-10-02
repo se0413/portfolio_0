@@ -1,27 +1,30 @@
 $(document).ready(function(){
-	const myFullpage = new fullpage('#fullpage', {  /* html에서 페이지 전체를 감싸는 요소 */
+	const myFullpage = new fullpage('#fullpage', {  
 
-		navigation: true, /* 오른쪽에 각 페이지의 paging */
-		navigationPosition: 'left', /* 위치 */
-		navigationTooltips: ['MAIN', 'I AM', 'Project1', 'Project2','Project3','Project4'], /* 툴팁 */
-		showActiveTooltip: true, /* 현재 활성화된 페이지의 툴팁에 특정 클래스 주기 */
+		navigation: true, 
+		navigationPosition: 'left', 
+		navigationTooltips: ['MAIN', 'I AM', 'PROJECT1', 'PROJECT12','PROJECT13','PROJECT4','fainal'], 
+		showActiveTooltip: true, 
 		
 		lockAnchors: true,
-		anchors: ['link1', 'link2', 'link3', 'link4'], /* href="#link1" 이렇게 코딩하면 해당 링크명으로 이동 */
+		anchors: ['link1', 'link2', 'link3', 'link4'], 
 
-		autoScrolling:true, /* 한페이지씩 스크롤 */
+		autoScrolling:true, 
 		scrollHorizontally: true,
 
-		verticalCentered: true, /* 컨텐츠 요소 위아래 가운데 */
+		verticalCentered: true, 
 		
-		scrollOverflow: false, /* 컨텐츠가 넘쳐도 스크롤 금지 */
+		scrollOverflow: false, 
 
 		afterLoad: function(origin, destination, direction, trigger){
-			if(destination.index == 2){ /* index가 2면 슬라이드는 세번째 슬라이드입니다. index 수는 0/1/2/3 */
-				console.log('3번째 슬라이드가 로딩 되었을때');
+			if(destination.index == 1){
+				$('#fp-nav').addClass('w')
+			}else{
+				$('#fp-nav').removeClass('w')
 			}
 		},
 
-		responsiveWidth: 640 /* fullpage를 적용시키지 않을 모바일 사이즈 */
+		responsiveWidth: 640 
 	});
+
 })

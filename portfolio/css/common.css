@@ -9,7 +9,7 @@ html, body{
 }
 #wrap{ 
     min-width: 1260px;
-    overflow: hidden;
+
 }
 .wrapper {
     width: 1260px;
@@ -17,14 +17,14 @@ html, body{
 }
 section {
     width: 100vw;
-    padding: 100px 0 0 0;
+    overflow: hidden;
 }
-.photo {
+.photo, .photo1, .photo2  {
     line-height: 0;
     font-size: 0;
     overflow: hidden;
 }
-.photo img {
+.photo img, .photo1 img, .photo2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
