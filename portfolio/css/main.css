@@ -206,8 +206,8 @@
 .Project1 .inner .h_link {
     display: flex;
 }
-.Project1 .inner .link {
-    margin-right: 20px;
+.Project1 .inner .h_link strong a {
+    margin-right: 10px;
 }
 .Project2 .inner ul li.c1 {
     background-color: #20231F;
@@ -248,6 +248,7 @@
 }
 .Project1 .inner .link a,
 .Project1 .inner .link_2 a,
+.Project1 .inner .link_3 a,
 .Project2 .inner .link a,
 .Project3 .inner .link a,
 .Project4 .inner .link a {
@@ -258,6 +259,7 @@
 }
 .Project1 .inner .link a:hover,
 .Project1 .inner .link_2 a:hover,
+.Project1 .inner .link_3 a:hover,
 .Project2 .inner .link a:hover,
 .Project3 .inner .link a:hover,
 .Project4 .inner .link a:hover {
