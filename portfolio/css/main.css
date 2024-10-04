@@ -74,18 +74,6 @@
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-/* .main .recode .photo2::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 300px;
-    height: 200px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/recode_stick.png);
-    content: "";
-} */
 @keyframes rotate {
     100% {transform: translate(-50%, -50%) rotate(360deg);}
 }

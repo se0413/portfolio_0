@@ -1,0 +1,52 @@
+html, body{
+    font-family: 'S-CoreDream';
+    font-weight:400; 
+    font-size: 15px;
+    letter-spacing: 0;
+    color: #fff;
+    word-break: keep-all; 
+    word-wrap: break-word; 
+}
+#wrap{ 
+    min-width: 1260px;
+    overflow: hidden;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0px auto; 
+}
+
+@media screen and (max-width: 1600px){
+    .wrapper {
+        margin: 0 200px; 
+        width: auto;
+    }
+}
+@media screen and (max-width: 1300px){
+    #wrap { 
+        min-width: 100%;
+    }
+}
+@media screen and (max-width: 1024px){
+    html, body{
+        font-size: 15px;
+    } 
+    .wrapper {
+        margin: 0 20px; 
+        width: auto;
+    }
+}
+@media screen and (max-width: 768px){
+    html, body{
+        font-size: 13px;
+    } 
+}
+:root {
+    --txt-size-tit : 4.667rem; /*70px*/
+    --txt-size-tit2 : 3.333rem; /*50px*/
+    --txt-size-sub : 1.333rem; /*20px*/
+    --txt-size-txt : 1.133rem; /*25px*/
+    --txt-color-main : #001B48;
+    --txt-color-main2 : #263D71;
+    --txt-color-main3 : rgba(67, 142, 243, 0.6) /*마우스 오버시 색상*/
+}
