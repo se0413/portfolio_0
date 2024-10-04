@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 		navigation: true, 
 		navigationPosition: 'left', 
-		navigationTooltips: ['MAIN', 'I AM', 'PROJECT1', 'PROJECT12','PROJECT13','PROJECT4','fainal'], 
+		navigationTooltips: ['MAIN', 'I AM', 'PROJECT1', 'PROJECT12','PROJECT13','PROJECT4','FINISH'], 
 		showActiveTooltip: true, 
 		
 		lockAnchors: true,
@@ -26,5 +26,4 @@ $(document).ready(function(){
 
 		responsiveWidth: 640 
 	});
-
 })
