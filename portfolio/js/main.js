@@ -7,7 +7,7 @@ $(document).ready(function(){
 		showActiveTooltip: true, 
 		
 		lockAnchors: true,
-		anchors: ['link1', 'link2', 'link3', 'link4'], 
+		anchors: ['link1', 'link2', 'link3', 'link4', 'link5', 'link6'], 
 
 		autoScrolling:true, 
 		scrollHorizontally: true,
