@@ -97,9 +97,6 @@
 .top_group .weather ul li span {
     color: #0074E5;
 }
-@media screen and (max-width: 1300px){
-    
-}
 .m_group .wrapper {
     display: flex;
     justify-content: center;
@@ -245,6 +242,59 @@
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='-0.5' x2='12.3996' y2='-0.5' transform='matrix(0.76403 0.645181 -0.76403 0.645181 0.527344 1)' stroke='%230061B0' stroke-opacity='0.8'/%3E%3C/svg%3E%0A");
     content: "";
+}
+@media screen and (max-width: 1300px){
+    .m_group .wrapper {
+        display: block;
+    }
+    .m_group .popup .swiper {
+        width: auto;
+        height: auto;
+    }
+    .m_group .mayor {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+    .m_group .mayor ul {
+        padding: 200px 0 0 20px;
+    }
+    .m_group .mayor ul li a{
+        display: block;
+        font-size: 20px;
+        color: #555;
+        margin: 15px 0;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(0, 97, 176, 0.8);
+        width: 170px;
+        position: relative;
+        transition: 0.5s;
+    }
+    .m_group .mayor ul li a:hover {
+        padding-left: 20px;
+    }
+    .m_group .mayor ul li a:hover::after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 7px;
+        height: 7px;
+        background-color: #0074E5;
+        border-radius: 50px;
+        content: "";
+    }
+    .m_group .mayor ul li a::before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 9px;
+        height: 8px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='-0.5' x2='12.3996' y2='-0.5' transform='matrix(0.76403 0.645181 -0.76403 0.645181 0.527344 1)' stroke='%230061B0' stroke-opacity='0.8'/%3E%3C/svg%3E%0A");
+        content: "";
+    }
 }
 .often_ico {
     margin-top: 50px;
