@@ -97,6 +97,9 @@
 .top_group .weather ul li span {
     color: #0074E5;
 }
+@media screen and (max-width: 1300px){
+    
+}
 .m_group .wrapper {
     display: flex;
     justify-content: center;
@@ -409,6 +412,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
+}
+.now .tap_area .tap_cnt ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
 }
 .now .tap_area .tap_cnt ul li a strong {
     display: block;

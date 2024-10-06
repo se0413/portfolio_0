@@ -283,6 +283,11 @@ header {
 .header_sub .navgnb .depth3 li a:hover {
     color: #0074E5;
 }
+@media screen and (max-width: 1300px){
+    .header_sub .gnb .gnb_wrap {
+        display: none;
+    }
+}
 footer .banner {
     background-color: rgba(221, 221, 221, 0.3);
     display: flex;
