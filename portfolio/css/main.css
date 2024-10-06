@@ -142,6 +142,9 @@
     text-align: center;
     line-height: 50px;
 }
+.Project3 .photo {
+    margin-left: 20px;
+}
 .Project1, .Project2, .Project3, .Project4 {
     background-color: #F2EFEA;
     display: flex;
