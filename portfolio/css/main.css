@@ -142,51 +142,51 @@
     text-align: center;
     line-height: 50px;
 }
-.Project3 .photo {
+.project1 .photo {
     margin-left: 20px;
 }
-.Project1, .Project2, .Project3, .Project4 {
+.project1, .project2, .project3, .project4, .emoticon, .draw {
     background-color: #F2EFEA;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Project1 .inner h1,
-.Project2 .inner h1,
-.Project3 .inner h1,
-.Project4 .inner h1 {
+.project1 .inner h1,
+.project2 .inner h1,
+.project3 .inner h1,
+.project4 .inner h1 {
     font-family: 'ghanachoco';
     font-size: 30px;
     margin-bottom: 10px;
 }
-.Project1 .inner strong,
-.Project2 .inner strong,
-.Project3 .inner strong,
-.Project4 .inner strong {
+.project1 .inner strong,
+.project2 .inner strong,
+.project3 .inner strong,
+.project4 .inner strong {
     display: block;
     font-size: 15px;
     line-height: 20px;
 }
-.Project1 .inner .color,
-.Project2 .inner .color,
-.Project3 .inner .color,
-.Project4 .inner .color {
+.project1 .inner .color,
+.project2 .inner .color,
+.project3 .inner .color,
+.project4 .inner .color {
     display: flex;
     font-size: 15px;
     line-height: 40px;
     margin-bottom: 10px;
 }
-.Project1 .inner .color ul,
-.Project2 .inner .color ul,
-.Project3 .inner .color ul,
-.Project4 .inner .color ul {
+.project1 .inner .color ul,
+.project2 .inner .color ul,
+.project3 .inner .color ul,
+.project4 .inner .color ul {
     display: flex;
     align-items: center;
 }
-.Project1 .inner .color ul li,
-.Project2 .inner .color ul li,
-.Project3 .inner .color ul li,
-.Project4 .inner .color ul li {
+.project1 .inner .color ul li,
+.project2 .inner .color ul li,
+.project3 .inner .color ul li,
+.project4 .inner .color ul li {
     width: 18px;
     height: 18px;
     font-size: 0;
@@ -194,80 +194,121 @@
     border-radius: 50px;
     margin: 0 7px;
 }
-.Project1 .inner .color ul li.c1 {
+.project1 .inner .color ul li.c1 {
     background-color: #568034;
 }
-.Project1 .inner .color ul li.c2 {
+.project1 .inner .color ul li.c2 {
     background-color: #B5C268;
 }
-.Project1 .inner .color ul li.c3 {
+.project1 .inner .color ul li.c3 {
     background-color: #FFE27C;
 }
-.Project1 .inner .color ul li.c4 {
+.project1 .inner .color ul li.c4 {
     background-color: #C8B6A0;
 }
-.Project1 .inner .h_link {
+.project2 .inner .h_link {
     display: flex;
 }
-.Project1 .inner .h_link strong a {
+.project2 .inner .h_link strong a {
     margin-right: 10px;
 }
-.Project2 .inner ul li.c1 {
+.project2 .inner ul li.c1 {
     background-color: #20231F;
 }
-.Project2 .inner ul li.c2 {
+.project2 .inner ul li.c2 {
     background-color: #333333;
 }
-.Project2 .inner ul li.c3 {
+.project2 .inner ul li.c3 {
     background-color: #D9D9D9;
 }
-.Project2 .inner ul li.c4 {
+.project2 .inner ul li.c4 {
     background-color: #F5F5F5;
 }
-.Project2 .inner ul li.c5 {
+.project2 .inner ul li.c5 {
     background-color: #fff;
     border: 1px solid rgba(32, 35, 31, 0.6);
 }
-.Project3 .inner .color ul li.c1 {
+.project3 .inner .color ul li.c1 {
     background-color: #2D2D2D;
 }
-.Project3 .inner .color ul li.c2 {
+.project3 .inner .color ul li.c2 {
     background-color: #DDDDDD;
 }
-.Project3 .inner .color ul li.c3 {
+.project3 .inner .color ul li.c3 {
     background-color: #0074E5;
 }
-.Project4 .inner .color ul li.c1 {
+.project4 .inner .color ul li.c1 {
     background-color: #001B48;
 }
-.Project4 .inner .color ul li.c2 {
+.project4 .inner .color ul li.c2 {
     background-color: #263D71;
 }
-.Project4 .inner .color ul li.c3 {
+.project4 .inner .color ul li.c3 {
     background-color: #3B63A1;
 }
-.Project4 .inner .color ul li.c4 {
+.project4 .inner .color ul li.c4 {
     background-color: #fff;
 }
-.Project1 .inner .link a,
-.Project1 .inner .link_2 a,
-.Project1 .inner .link_3 a,
-.Project2 .inner .link a,
-.Project3 .inner .link a,
-.Project4 .inner .link a {
+.project1 .inner .link a,
+.project2 .inner .link_2 a,
+.project2 .inner .link_3 a,
+.project2 .inner .link a,
+.project3 .inner .link a,
+.project4 .inner .link a {
     font-size: 15px;
     padding: 5px 10px;
     border: 1px solid #20231F;
     transition: 0.5s;
 }
-.Project1 .inner .link a:hover,
-.Project1 .inner .link_2 a:hover,
-.Project1 .inner .link_3 a:hover,
-.Project2 .inner .link a:hover,
-.Project3 .inner .link a:hover,
-.Project4 .inner .link a:hover {
+.project1 .inner .link a:hover,
+.project2 .inner .link_2 a:hover,
+.project2 .inner .link_3 a:hover,
+.project2 .inner .link a:hover,
+.project3 .inner .link a:hover,
+.project4 .inner .link a:hover {
     color: #fff;
     background-color: #282119;
+}
+.emoticon .inner h1{
+    font-size: 0;
+    line-height: 0;
+}
+.emoticon .d_tit h2 {
+    font-family: 'ghanachoco';
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.emoticon .d_tit a {
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid #20231F;
+    transition: 0.5s;
+}
+.emoticon .d_tit a:hover {
+    color: #fff;
+    background-color: #282119;
+}
+.emoticon ul {
+    display: flex;
+    margin-top: 30px;
+}
+.emoticon ul li:first-child {
+    margin-right: 20px;
+}
+.emoticon ul li .photo {
+    width: 500px;
+}
+.draw h1 {
+    font-size: 0;
+    line-height: 0;
+}
+.draw .inner {
+}
+.draw .inner .photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .fainal {
     background-color: #4E4C51;
