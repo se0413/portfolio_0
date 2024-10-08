@@ -194,16 +194,16 @@
     border-radius: 50px;
     margin: 0 7px;
 }
-.project1 .inner .color ul li.c1 {
+.project2 .inner .color ul li.c1 {
     background-color: #568034;
 }
-.project1 .inner .color ul li.c2 {
+.project2 .inner .color ul li.c2 {
     background-color: #B5C268;
 }
-.project1 .inner .color ul li.c3 {
+.project2 .inner .color ul li.c3 {
     background-color: #FFE27C;
 }
-.project1 .inner .color ul li.c4 {
+.project2 .inner .color ul li.c4 {
     background-color: #C8B6A0;
 }
 .project2 .inner .h_link {
@@ -212,29 +212,28 @@
 .project2 .inner .h_link strong a {
     margin-right: 10px;
 }
-.project2 .inner ul li.c1 {
+.project3 .inner ul li.c1 {
     background-color: #20231F;
 }
-.project2 .inner ul li.c2 {
+.project3 .inner ul li.c2 {
     background-color: #333333;
 }
-.project2 .inner ul li.c3 {
+.project3 .inner ul li.c3 {
     background-color: #D9D9D9;
 }
-.project2 .inner ul li.c4 {
+.project3 .inner ul li.c4 {
     background-color: #F5F5F5;
 }
-.project2 .inner ul li.c5 {
+.project3 .inner ul li.c5 {
     background-color: #fff;
-    border: 1px solid rgba(32, 35, 31, 0.6);
 }
-.project3 .inner .color ul li.c1 {
+.project1 .inner .color ul li.c1 {
     background-color: #2D2D2D;
 }
-.project3 .inner .color ul li.c2 {
+.project1 .inner .color ul li.c2 {
     background-color: #DDDDDD;
 }
-.project3 .inner .color ul li.c3 {
+.project1 .inner .color ul li.c3 {
     background-color: #0074E5;
 }
 .project4 .inner .color ul li.c1 {
