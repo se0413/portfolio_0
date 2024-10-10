@@ -10,6 +10,7 @@ html, body{
 }
 #wrap{ 
     min-width: 1260px;
+    overflow: hidden;
 }
 .wrapper {
     width: 1400px;
