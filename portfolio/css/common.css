@@ -18,12 +18,12 @@ section {
     width: 100vw;
     overflow: hidden;
 }
-.photo, .photo1, .photo2  {
+.photo, .photo1, .photo2, .recode {
     line-height: 0;
     font-size: 0;
     overflow: hidden;
 }
-.photo img, .photo1 img, .photo2 img {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
