@@ -1,0 +1,60 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual .swiper li {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 450px;
+}
+.visual .swiper li.bg1 {
+    background-image: url(../images/visual_bg1.png);
+}
+.visual .swiper li.bg2 {
+    background-image: url(../images/visual_bg2.png);
+}
+.visual .swiper li.bg3 {
+    background-image: url(../images/visual_bg3.png);
+}
+.visual .swiper li strong {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+    margin: 40vh 0 0 0;
+}
+.visual .swiper li h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+}
+.visual .swiper .btn_wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+    left: 0;
+    width: auto;
+    font-size: 0;
+    line-height: 0;
+}
+.swiper-pagination {
+    position: relative;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+}

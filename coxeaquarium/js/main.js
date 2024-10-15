@@ -32,9 +32,6 @@ $(document).ready(function(){
 		pagination: {  
 			el: '.visual .paging', 
 			clickable: true, 
-			renderBullet: function (index, className) {   
-				return '<div class="item '+className+'"><span class="txt' + (index + 1) + '"></span></div>';
-			},
 		},
 
 	});
