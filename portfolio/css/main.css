@@ -316,6 +316,22 @@
     color: #fff;
     background-color: #282119;
 }
+.cardnews .inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardnews h1 {
+    font-size: 0;
+    line-height: 0;
+}
+.cardnews .card .photo {
+    width: 640px;
+}
 .emoticon .inner h1{
     font-size: 0;
     line-height: 0;
@@ -362,23 +378,23 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.fainal {
+.finish {
     background-color: #4E4C51;
 }
-.fainal .photo1 {
+.finish .photo1 {
     position: absolute;
     left: 50%;
     top: 50%;   
     transform: translate(-50%, -50%);
 }
-.fainal .photo1.f {
+.finish .photo1.f {
     position: absolute;
     left: 50%;
     top: 50%;   
     transform: translate(-50%, -50%);
     animation: rotate2 6s linear forwards;
 }
-.fainal .photo2 {
+.finish .photo2 {
     position: absolute;
     left: 50%;
     bottom: 0;
