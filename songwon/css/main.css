@@ -90,3 +90,55 @@
     width: 45px;
     border-radius: 50px;
 }
+.notice h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin: 130px 0 10px 0;
+}
+.notice p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+.notice .tap_area .tap_btn ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 1px solid #1D60DB;
+}
+.notice .tap_area .tap_btn ul li span {
+    display: block;
+    padding: 30px 60px;
+}
+.notice .tap_area .tap_btn ul li.active span {
+    color: #1D60DB;
+    border-bottom: 3px solid #1D60DB;
+}
+.notice .tap_area .tap_cnt .detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 24px 0 145px 0;
+}
+.notice .tap_area .tap_cnt .detail li {
+    width: calc(50% - 50px);
+    margin: 10px;
+    border: 1px solid #1D60DB;
+    border-radius: 30px;
+}
+.notice .tap_area .tap_cnt .detail li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.notice .tap_area .tap_cnt .detail li a:hover {
+    color: #1D60DB;
+}
+.notice .tap_area .tap_cnt .detail li a strong {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
