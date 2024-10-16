@@ -193,7 +193,7 @@
     border: 1px solid #1d1d1d;
     z-index: 2;
 }
-.project1, .project2, .project3, .project4, .emoticon, .draw {
+.project1, .project2, .project3, .project4, .emoticon, .draw , .cardnews{
     background-color: #F2EFEA;
     display: flex;
     justify-content: center;
