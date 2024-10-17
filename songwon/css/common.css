@@ -31,13 +31,17 @@ img {
     #wrap { 
         min-width: 100%;
     }
+    .wrapper {
+        margin: 0 20px; 
+        width: auto;
+    }
 }
 @media screen and (max-width: 1024px){
     html, body{
         font-size: 18px;
     } 
     .wrapper {
-        margin: 0 20px; 
+        margin: 0 10px; 
         width: auto;
     }
 }
@@ -45,8 +49,4 @@ img {
     html, body{
         font-size: 15px;
     } 
-    .wrapper {
-        margin: 0 10px; 
-        width: auto;
-    }
 }

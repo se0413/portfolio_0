@@ -184,6 +184,45 @@ header .header_sub .gnb_wrap .depth2 > li > a:hover {
 header .header_sub .gnb_wrap .depth1 > li.on .depth2 {
     display: block;
 }
+@media screen and (max-width: 1260px){
+    header .header_sub .gnb_wrap .depth1 > li,
+    header .header_sub .gnb_wrap .depth2 > li {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1040px){
+    header .header_top {
+        height: 50px;
+        line-height: 50px;
+    }
+    header .tnb_l ul {
+        display: flex;
+        font-size: 11px;
+    }
+    header .tnb_l ul li {
+        padding: 0 5px;
+    }
+    header .tnb_l ul li:nth-child(2) {
+        display: none;
+    }
+    header .logo a {
+        width: 120px;
+        height: 23px;
+    }
+    header .tnb_r ul li {
+        padding: 0 5px;
+    }
+    header .tnb_r ul li button {
+        width: 20px;
+        height: 20px;
+    }
+    header .header_sub {
+        display: none;
+    }
+    .quick {
+        display: none;
+    }
+}
 .quick {
     position: fixed;
     right: 1.6%;

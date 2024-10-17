@@ -34,6 +34,9 @@
     font-weight: 900;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
 }
+.visual .swiper li h2 br {
+    display: none;
+}
 .visual .swiper .btn_wrap {
     position: absolute;
     bottom: 3%;
@@ -80,7 +83,6 @@
 .swiper-pagination {
     position: relative;
     text-align: center;
-    transition: .3s opacity;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
     background-color: #fff;
@@ -116,6 +118,12 @@
     color: #1D60DB;
     border-bottom: 3px solid #1D60DB;
 }
+.notice .tap_area .tap_cnt div[role="tabpanel"] {
+    display: none; /*숨김*/
+}
+.notice .tap_area .tap_cnt div[role="tabpanel"].active {
+    display: block; /*보임*/
+}
 .notice .tap_area .tap_cnt .detail {
     display: flex;
     flex-wrap: wrap;
@@ -141,4 +149,27 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+@media screen and (max-width: 1040px){
+    .visual .swiper li {
+        height: 500px;
+    }
+    .visual .swiper li strong {
+        display: none;
+    }
+    .visual .swiper li h2 {
+        font-size: 35px;
+        margin-top: 220px;
+    }
+    .visual .swiper li h2 br {
+        display: block;
+    }
+    .visual .swiper .btn_wrap button {
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet-active {
+        width: 30px;
+    }
 }
