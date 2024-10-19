@@ -48,6 +48,7 @@ $(document).ready(function(){
         tab_cnt_prant.find(tab_name).addClass('active')
         
      })
+
      const news_swiper = new Swiper('.news .swiper', { 
         slidesPerView: 1, 
         spaceBetween: 14, 
@@ -62,6 +63,29 @@ $(document).ready(function(){
             },
         },
         centeredSlides: false,
+        loop: true, 
+
+        scrollbar: {
+            el: ".news .swiper-scrollbar",
+            hide: false,
+            draggable: true,
+        },
+    });
+
+    const sns_swiper = new Swiper('.sns .swiper', { 
+        slidesPerView: 1, 
+        spaceBetween: 14, 
+        breakpoints: {
+            560: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            },
+        },
+        centeredSlides: true,
         loop: true, 
 
         scrollbar: {
