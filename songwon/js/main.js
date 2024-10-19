@@ -49,12 +49,12 @@ $(document).ready(function(){
         
      })
      const news_swiper = new Swiper('.news .swiper', { 
-        slidesPerView: 2, 
-        spaceBetween: 16, 
+        slidesPerView: 1, 
+        spaceBetween: 14, 
         breakpoints: {
-            768: { 
-                slidesPerView: 4,
-                spaceBetween: 30,
+            560: {
+                slidesPerView: 2,
+                spaceBetween: 24,
             },
             1024: {
                 slidesPerView: 4,
