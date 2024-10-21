@@ -72,4 +72,29 @@ $(document).ready(function(){
             scrollTop:0
         },500)
     })
+
+    $('footer .f_link .link1 button.btn_open').on('click', function(){
+        $('footer .f_link .link1').addClass('open')
+        $('footer .f_link .link1 ul').slideDown()
+    })
+    $('footer .f_link .link2 button.btn_open').on('click', function(){
+        $('footer .f_link .link2').addClass('open')
+        $('footer .f_link .link2 ul').slideDown()
+    })
+    $('footer .f_link .link3 button.btn_open').on('click', function(){
+        $('footer .f_link .link3').addClass('open')
+        $('footer .f_link .link3 ul').slideDown()
+    })
+    $('footer .f_link .link1 button.btn_close').on('click', function(){
+        $('footer .f_link .link1').removeClass('open')
+        $('footer .f_link .link1 ul').slideUp()
+    })
+    $('footer .f_link .link2 button.btn_close').on('click', function(){
+        $('footer .f_link .link2').removeClass('open')
+        $('footer .f_link .link2 ul').slideUp()
+    })
+    $('footer .f_link .link3 button.btn_close').on('click', function(){
+        $('footer .f_link .link3').removeClass('open')
+        $('footer .f_link .link3 ul').slideUp()
+    })
 })

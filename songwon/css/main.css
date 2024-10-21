@@ -4,7 +4,7 @@
 @import url(layout.css);
 
 .visual .swiper li {
-    height: 100vh;
+    height: 900px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +26,7 @@
     font-size: 30px;
     font-weight: 700;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
-    margin: 40vh 0 0 0;
+    margin: 400px 0 0 0;
 }
 .visual .swiper li h2 {
     text-align: center;
@@ -789,6 +789,12 @@
 .sns .swiper ul {
     margin-bottom: 30px;
 }
+.sns .swiper ul li a .photo img {
+    transition: 0.5s;
+}
+.sns .swiper ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
 .sns .more {
     position: absolute;
     left: 50%;
@@ -828,7 +834,32 @@
 }
 .sns .more a:hover::before {
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_106_87' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='40' height='40'%3E%3Crect x='40' y='40' width='40' height='40' transform='rotate(-180 40 40)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_106_87)'%3E%3Cpath d='M29.1285 19.1665L22.9039 12.9423C22.7417 12.7798 22.6568 12.5886 22.6493 12.3686C22.6418 12.1483 22.7267 11.9464 22.9039 11.7628C23.0878 11.5789 23.286 11.4854 23.4985 11.4823C23.7113 11.479 23.9094 11.5693 24.0931 11.7532L31.3976 19.0573C31.6668 19.3268 31.8014 19.641 31.8014 19.9998C31.8014 20.3587 31.6668 20.6729 31.3976 20.9423L24.0931 28.2465C23.9306 28.409 23.7378 28.494 23.5147 28.5015C23.2914 28.509 23.0878 28.4208 22.9039 28.2369C22.7267 28.0533 22.6364 27.8568 22.6331 27.6473C22.63 27.4379 22.7203 27.2412 22.9039 27.0573L29.1285 20.8332L8.49389 20.8332C8.25667 20.8332 8.05848 20.7536 7.89931 20.5944C7.74014 20.4353 7.66056 20.2371 7.66056 19.9998C7.66056 19.7626 7.74014 19.5644 7.89931 19.4053C8.05848 19.2461 8.25667 19.1665 8.49389 19.1665L29.1285 19.1665Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
-}
-.sns .more a:hover::before {
     transform: translateX(10px);
+}
+@media screen and (max-width: 1040px){
+    .sns {
+        padding: 60px 0 80px 0;
+    }
+    .sns h2 {
+        font-size: 25px;
+        margin: 0 0 10px 0;
+    }
+    .sns p {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .sns .more a {
+        width: auto;
+        font-size: 13px;
+        padding: 10px 70px 10px 15px;
+        background-color: #fff;
+        border-radius: 15px;
+        white-space: nowrap;
+    }
+    .sns .more a::before {
+        right: 15px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
+    }
 }
