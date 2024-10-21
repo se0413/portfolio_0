@@ -454,10 +454,6 @@ footer .f_link ul::-webkit-scrollbar-thumb {
 footer .f_link ul::-webkit-scrollbar-button {
     display: none;
 }
-footer .f_link ul::-webkit-scrollbar-track,
-footer .f_link ul::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-}
 @media screen and (max-width: 1040px){
     footer {
         padding: 20px 0 100px 0;
