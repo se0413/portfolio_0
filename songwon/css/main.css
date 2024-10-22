@@ -848,6 +848,10 @@
         font-size: 15px;
         margin-bottom: 40px;
     }
+    .sns .s_box ul li a {
+        width: 30px;
+        height: 30px;
+    }
     .sns .more a {
         width: auto;
         font-size: 13px;
