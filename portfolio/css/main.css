@@ -402,7 +402,7 @@
 .cursor { 
 	position: absolute; 
 	z-index: 1000;
-	transform: translate(10%, 10%); 
+	transform: translate(10%, 40%); 
 	display:none; 
 }
 .cursor.on {
