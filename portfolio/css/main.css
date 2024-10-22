@@ -242,77 +242,74 @@
     border-radius: 50px;
     margin: 0 7px;
 }
-.project2 .inner .color ul li.c1 {
-    background-color: #568034;
-}
-.project2 .inner .color ul li.c2 {
-    background-color: #B5C268;
-}
-.project2 .inner .color ul li.c3 {
-    background-color: #FFE27C;
-}
-.project2 .inner .color ul li.c4 {
-    background-color: #C8B6A0;
-}
-.project2 .inner .h_link {
-    display: flex;
-}
-.project2 .inner .h_link strong a {
-    margin-right: 10px;
-}
-.project3 .inner ul li.c1 {
-    background-color: #20231F;
-}
-.project3 .inner ul li.c2 {
-    background-color: #333333;
-}
-.project3 .inner ul li.c3 {
-    background-color: #D9D9D9;
-}
-.project3 .inner ul li.c4 {
-    background-color: #F5F5F5;
-}
-.project3 .inner ul li.c5 {
-    background-color: #fff;
-}
 .project1 .inner .color ul li.c1 {
-    background-color: #2D2D2D;
+    background-color: #1D60DB;
 }
 .project1 .inner .color ul li.c2 {
-    background-color: #DDDDDD;
+    background-color: #EB6100;
 }
 .project1 .inner .color ul li.c3 {
+    background-color: #5CB531;
+}
+.project2 .inner .color ul li.c1 {
+    background-color: #2D2D2D;
+}
+.project2 .inner .color ul li.c2 {
+    background-color: #DDDDDD;
+}
+.project2 .inner .color ul li.c3 {
     background-color: #0074E5;
 }
-.project4 .inner .color ul li.c1 {
-    background-color: #001B48;
+.project3 .inner .color ul li.c1 {
+    background-color: #568034;
 }
-.project4 .inner .color ul li.c2 {
-    background-color: #263D71;
+.project3 .inner .color ul li.c2 {
+    background-color: #B5C268;
 }
-.project4 .inner .color ul li.c3 {
-    background-color: #3B63A1;
+.project3 .inner .color ul li.c3 {
+    background-color: #FFE27C;
 }
-.project4 .inner .color ul li.c4 {
+.project3 .inner .color ul li.c4 {
+    background-color: #C8B6A0;
+}
+.project3 .inner .h_link {
+    display: flex;
+}
+.project3 .inner .h_link strong a {
+    margin-right: 10px;
+}
+.project4 .inner ul li.c1 {
+    background-color: #20231F;
+}
+.project4 .inner ul li.c2 {
+    background-color: #333333;
+}
+.project4 .inner ul li.c3 {
+    background-color: #D9D9D9;
+}
+.project4 .inner ul li.c4 {
+    background-color: #F5F5F5;
+}
+.project4 .inner ul li.c5 {
     background-color: #fff;
 }
 .project1 .inner .link a,
-.project2 .inner .link_2 a,
-.project2 .inner .link_3 a,
-.project2 .inner .link a,
+.project3 .inner .link_2 a,
+.project3 .inner .link_3 a,
 .project3 .inner .link a,
-.project4 .inner .link a {
+.project4 .inner .link a,
+.project2 .inner .link a {
     font-size: 15px;
     padding: 5px 10px;
     border: 1px solid #20231F;
     transition: 0.5s;
 }
 .project1 .inner .link a:hover,
-.project2 .inner .link_2 a:hover,
-.project2 .inner .link_3 a:hover,
-.project2 .inner .link a:hover,
+.project3 .inner .link_2 a:hover,
+.project3 .inner .link_3 a:hover,
 .project3 .inner .link a:hover,
-.project4 .inner .link a:hover {
+.project4 .inner .link a:hover,
+.project2 .inner .link a:hover {
     color: #fff;
     background-color: #282119;
 }
@@ -401,4 +398,23 @@
     transform: translate(-50%, 0);
     background-color: #E0D2B7;
     border-radius: 50px 50px 0 0;
+}
+.cursor { 
+	position: absolute; 
+	z-index: 1000;
+	transform: translate(10%, 10%); 
+	display:none; 
+}
+.cursor.on {
+	display: block;
+    font-family: 'ghanachoco';
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #1d1d1d;
+    color: #1d1d1d;
+    font-size: 15px;
 }
