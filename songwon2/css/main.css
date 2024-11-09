@@ -20,6 +20,9 @@
 .visual .swiper li.bg3 {
     background-image: url(../images/visual_bg3.png);
 }
+.visual .swiper li.bg4 {
+    background-image: url(../images/visual_bg4.png);
+}
 .visual .swiper li strong {
     display: block;
     text-align: center;

@@ -18,7 +18,17 @@ $(document).ready(function(){
         resize_chk()
     })
 
-
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll >= 50) {
+            //console.log('a');
+            $(".header_sub").addClass("fixed");
+        } else {
+            //console.log('a');
+            $(".header_sub").removeClass("fixed");
+        }
+    });
 
     $('header .header_sub').on('mouseenter', function(){
         if(pc_mobile == 'pc'){
