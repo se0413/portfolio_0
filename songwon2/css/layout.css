@@ -39,23 +39,20 @@ header .header_top .wrapper {
     justify-content: space-between;
     align-items: center;
 }
-html.header_sticky #header .header_top {
-    display: none;
-}
-header .tnb_l ul,
-header .tnb_r ul {
+header .tnb_l > ul,
+header .tnb_r > ul {
     display: flex;
     align-items: center;
 }
 header .tnb_l ul li,
 header .tnb_r ul li {
-    padding: 0 25px;
     height: 50px;
     line-height: 50px;
 }
 header .tnb_l ul li a,
 header .tnb_r ul li a {
     display: block;
+    padding: 0 25px;
 }
 header .tnb_r ul li:nth-child(1) {
     background-color: #5B7FC3;
@@ -69,11 +66,59 @@ header .tnb_r ul li:nth-child(3) {
 header .tnb_r ul li:nth-child(4) {
     background-color: #1A43BF;
 }
+header .tnb_l .global {
+    position: relative;
+}
+header .tnb_l .global button {
+    position: relative;
+    padding: 0 25px;
+}
+header .tnb_l .global button::before {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+header .tnb_l .global button.btn_open::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_283_759' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_283_759)'%3E%3Cpath d='M11.5653 13.873L8.88806 11.1958C8.85123 11.1589 8.82031 11.116 8.79531 11.067C8.77031 11.0182 8.75781 10.9658 8.75781 10.91C8.75781 10.7982 8.79481 10.7019 8.86881 10.6212C8.94281 10.5404 9.0404 10.5 9.16156 10.5H14.8386C14.9597 10.5 15.0573 10.5413 15.1313 10.6238C15.2053 10.7063 15.2423 10.8025 15.2423 10.9125C15.2423 10.94 15.1987 11.0346 15.1116 11.1962L12.4346 13.873C12.3731 13.9347 12.3066 13.9822 12.2353 14.0155C12.164 14.0488 12.0856 14.0655 12.0001 14.0655C11.9146 14.0655 11.8361 14.0488 11.7648 14.0155C11.6935 13.9822 11.627 13.9347 11.5653 13.873Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+header .tnb_l .global button.btn_close::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_283_759' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect x='24' y='24' width='24' height='24' transform='rotate(-180 24 24)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_283_759)'%3E%3Cpath d='M12.4347 10.127L15.1119 12.8042C15.1488 12.8411 15.1797 12.884 15.2047 12.933C15.2297 12.9818 15.2422 13.0342 15.2422 13.09C15.2422 13.2018 15.2052 13.2981 15.1312 13.3788C15.0572 13.4596 14.9596 13.5 14.8384 13.5L9.16144 13.5C9.04027 13.5 8.94269 13.4587 8.86869 13.3762C8.79469 13.2937 8.75769 13.1975 8.75769 13.0875C8.75769 13.06 8.80127 12.9654 8.88844 12.8038L11.5654 10.127C11.6269 10.0653 11.6934 10.0178 11.7647 9.9845C11.836 9.95117 11.9144 9.9345 11.9999 9.9345C12.0854 9.9345 12.1639 9.95117 12.2352 9.9845C12.3065 10.0178 12.373 10.0653 12.4347 10.127Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
 header .tnb_l .global ul {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 101;
+    background-color: #0A2471;
+    border: 1px solid #fff;
+    display: none;
+}
+header .tnb_l .global.open ul {
+    display: block;
+}
+header .tnb_l .global ul li a {
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+header .tnb_l .global ul li a:hover {
+    text-decoration: underline;
+}
+header .tnb_l .global.open .btn_open {
     display: none;
 }
 header .tnb_l .global .btn_close {
     display: none;
+}
+header .tnb_l .global.open .btn_close {
+    display: block;
 }
 header .logo a {
     display: block;
@@ -123,6 +168,10 @@ header .header_sub .wrapper {
     align-items: center;
     line-height: 100px;
 }
+header .header_sub .gnb .gnb_open,
+header .header_sub .gnb .gnb_close {
+    display: none;
+}
 header .header_sub .gnb_wrap .depth1 {
     display: flex;
     justify-content: center;
@@ -160,6 +209,9 @@ header .header_sub .gnb_wrap .depth2::before {
     background-color: rgba(255, 255, 255, 0.3);
     content: "";
 }
+header .header_sub .gnb_wrap .depth1 > li:last-child .depth2:before {
+    display: none;
+}
 header .header_sub .gnb_wrap .depth2 > li {
     width: 220px;
 }
@@ -175,11 +227,74 @@ header .header_sub .gnb_wrap .depth2 > li > a:hover {
     font-weight: 700;
     letter-spacing: 1px;
 }
-@media screen and (max-width: 1260px){
-
+@media screen and (max-width: 1400px){
+    header .logo a {
+        width: 210px;
+        height: 35px;
+    }
+    header .header_sub .gnb_wrap .depth1 > li {
+        width: 170px;
+    }
+    header .header_sub .gnb_wrap .depth1 > li > a {
+        font-size: 25px;
+    }
+    header .header_sub .gnb_wrap .depth2 > li {
+        width: 170px;
+    }
+    header .header_sub .gnb_wrap .depth2 > li > a {
+        font-size: 18px;
+        line-height: 40px;
+    }
 }
-@media screen and (max-width: 1040px){
-
+@media screen and (max-width: 1070px){
+    header .logo a {
+        width: 127px;
+        height: 20px;
+    }
+    header .header_top {
+        display: none;
+    }
+    header .header_sub .wrapper {
+        height: 50px;
+        line-height: 50px;
+    }
+    header .header_sub {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 50px;
+    }
+    header .header_sub .gnb .gnb_open {
+        display: block;
+    }
+    header .header_sub .gnb > button {
+        width: 60px;
+        height: 50px;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+    }
+    header .header_sub .gnb > button::before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 24px;
+        height: 24px;
+        transform: translate(-50%, -50%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+    header .header_sub .gnb > button.gnb_open::before {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_322_481' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_322_481)'%3E%3Cpath d='M8.8845 19C8.591 19 8.34458 18.9003 8.14525 18.701C7.94592 18.5017 7.84625 18.2552 7.84625 17.9615C7.84625 17.668 7.94592 17.4215 8.14525 17.222C8.34458 17.0227 8.591 16.923 8.8845 16.923H19.9615C20.2552 16.923 20.5017 17.0227 20.701 17.222C20.9003 17.4215 21 17.668 21 17.9615C21 18.2552 20.9003 18.5017 20.701 18.701C20.5017 18.9003 20.2552 19 19.9615 19H8.8845ZM8.8845 13.0385C8.591 13.0385 8.34458 12.9388 8.14525 12.7395C7.94592 12.5402 7.84625 12.2937 7.84625 12C7.84625 11.7063 7.94592 11.4598 8.14525 11.2605C8.34458 11.0612 8.591 10.9615 8.8845 10.9615H19.9615C20.2552 10.9615 20.5017 11.0612 20.701 11.2605C20.9003 11.4598 21 11.7063 21 12C21 12.2937 20.9003 12.5402 20.701 12.7395C20.5017 12.9388 20.2552 13.0385 19.9615 13.0385H8.8845ZM8.8845 7.077C8.591 7.077 8.34458 6.97733 8.14525 6.778C7.94592 6.5785 7.84625 6.332 7.84625 6.0385C7.84625 5.74483 7.94592 5.49833 8.14525 5.299C8.34458 5.09967 8.591 5 8.8845 5H19.9615C20.2552 5 20.5017 5.09967 20.701 5.299C20.9003 5.49833 21 5.74483 21 6.0385C21 6.332 20.9003 6.5785 20.701 6.778C20.5017 6.97733 20.2552 7.077 19.9615 7.077H8.8845ZM4.0385 7.077C3.74483 7.077 3.49833 6.97733 3.299 6.778C3.09967 6.5785 3 6.332 3 6.0385C3 5.74483 3.09967 5.49833 3.299 5.299C3.49833 5.09967 3.74483 5 4.0385 5C4.332 5 4.5785 5.09967 4.778 5.299C4.97733 5.49833 5.077 5.74483 5.077 6.0385C5.077 6.332 4.97733 6.5785 4.778 6.778C4.5785 6.97733 4.332 7.077 4.0385 7.077ZM4.0385 13.0385C3.74483 13.0385 3.49833 12.9388 3.299 12.7395C3.09967 12.5402 3 12.2937 3 12C3 11.7063 3.09967 11.4598 3.299 11.2605C3.49833 11.0612 3.74483 10.9615 4.0385 10.9615C4.332 10.9615 4.5785 11.0612 4.778 11.2605C4.97733 11.4598 5.077 11.7063 5.077 12C5.077 12.2937 4.97733 12.5402 4.778 12.7395C4.5785 12.9388 4.332 13.0385 4.0385 13.0385ZM4.0385 19C3.74483 19 3.49833 18.9003 3.299 18.701C3.09967 18.5017 3 18.2552 3 17.9615C3 17.668 3.09967 17.4215 3.299 17.222C3.49833 17.0227 3.74483 16.923 4.0385 16.923C4.332 16.923 4.5785 17.0227 4.778 17.222C4.97733 17.4215 5.077 17.668 5.077 17.9615C5.077 18.2552 4.97733 18.5017 4.778 18.701C4.5785 18.9003 4.332 19 4.0385 19Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+    header .header_sub .gnb > button.gnb_close::before {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_328_535' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_328_535)'%3E%3Cpath d='M12.0002 12.708L6.75397 17.954C6.66047 18.0476 6.54572 18.0976 6.40972 18.104C6.27389 18.1105 6.1528 18.0605 6.04647 17.954C5.93997 17.8476 5.88672 17.7297 5.88672 17.6002C5.88672 17.4707 5.93997 17.3528 6.04647 17.2465L11.2925 12.0002L6.04647 6.75397C5.9528 6.66047 5.9028 6.54572 5.89647 6.40972C5.88997 6.27388 5.93997 6.1528 6.04647 6.04647C6.1528 5.93997 6.27072 5.88672 6.40022 5.88672C6.52972 5.88672 6.64764 5.93997 6.75397 6.04647L12.0002 11.2925L17.2465 6.04647C17.34 5.9528 17.4547 5.9028 17.5907 5.89647C17.7266 5.88997 17.8476 5.93997 17.954 6.04647C18.0605 6.1528 18.1137 6.27072 18.1137 6.40022C18.1137 6.52972 18.0605 6.64764 17.954 6.75397L12.708 12.0002L17.954 17.2465C18.0476 17.34 18.0976 17.4547 18.104 17.5907C18.1105 17.7266 18.0605 17.8476 17.954 17.954C17.8476 18.0605 17.7297 18.1137 17.6002 18.1137C17.4707 18.1137 17.3528 18.0605 17.2465 17.954L12.0002 12.708Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+    header .header_sub .gnb_wrap {
+        display: none;
+    }
 }
 .quick {
     position: fixed;
@@ -200,22 +315,26 @@ header .header_sub .gnb_wrap .depth2 > li > a:hover {
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
-    background-color: rgba(157, 157, 157, 0.5);
+    background-color: #fff;
     margin-bottom: 10px;
     text-align: center;
-    color: #fff;
+    color: #1d1d1d;
     font-size: 20px;
     position: relative;
-    backdrop-filter: blur(10px);
 }
-.quick button.open,
-.quick .quick_ctn ul li a:hover,
-.quick button.top:hover {
+.quick button.open {
     background-color: #1D60DB;
+    color: #fff;
+}
+.quick .quick_ctn ul li a:hover {
+    background-color: #1D60DB;
+    color: #fff;
 }
 .quick button.top {
     padding-right: 20px;
     position: relative;
+    background-color: #1A43BF;
+    color: #fff;
 }
 .quick button.top::before {
     position: absolute;

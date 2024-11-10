@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     function resize_chk(){
         win_w = $(window).width()
-        if(win_w > 1024){
+        if(win_w > 1070){
             pc_mobile = 'pc'
         }else{
             pc_mobile = 'mobile'
@@ -29,6 +29,17 @@ $(document).ready(function(){
             $(".header_sub").removeClass("fixed");
         }
     });
+
+    $('header .tnb_l .global .btn_open').on('click', function(){
+        if(pc_mobile == 'pc'){
+            $('header .tnb_l .global').addClass('open')
+        }
+    })
+    $('header .tnb_l .global .btn_close').on('click', function(){
+        if(pc_mobile == 'pc'){
+            $('header .tnb_l .global').removeClass('open')
+        }
+    })
 
     $('header .header_sub').on('mouseenter', function(){
         if(pc_mobile == 'pc'){
