@@ -27,22 +27,31 @@ $(document).ready(function(){
     })
 
 	const bookmark_swiper = new Swiper('.bookmark .swiper', { 
+        slidesPerView: 2,
         spaceBetween: 16,
         breakpoints: {
             1400: {  
                 slidesPerView: 7,
 			    spaceBetween: 10,
             },
-            1070: {  
+            1000: {  
                 slidesPerView: 5,
-			    spaceBetween: 5,
+			    spaceBetween: 10,
+            },
+            600: {  
+                slidesPerView: 4,
+			    spaceBetween: 10,
+            },
+            480: {  
+                slidesPerView: 3,
+			    spaceBetween: 10,
             },
         },
         centeredSlides: false, 
         loop: false,  
         navigation: {
-            nextEl: '.swiper .btn_next',
-            prevEl: '.swiper .btn_prev',
+            nextEl: '.tit_txt .btn_next',
+            prevEl: '.tit_txt .btn_prev',
         },
     });
 })
