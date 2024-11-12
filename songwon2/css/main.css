@@ -490,6 +490,7 @@
     margin: 0;
 }
 .board1 .calendar .event-date {
+    width: 30%;
     padding: 25px;
     border-radius: 15px;
     background-color: #1D60DB;
@@ -567,10 +568,15 @@
     }
     .board1 .tap_area .tap_cnt ul {
         margin: 15px 0 35px 0;
+        flex-wrap: wrap;
+    }
+    .board1 .tap_area .tap_cnt ul li {
+        width: 100%;
     }
     .board1 .tap_area .tap_cnt ul li a {
         padding: 10px 0;
         font-size: 20px;
+        justify-content: space-between;
     }
     .board1 .tap_area .tap_cnt ul li a strong {
         padding: 3px 15px;
