@@ -49,7 +49,7 @@
                 <div class="gnb_bg"></div>
                 <div class="wrapper">
                     <h1 class="logo"><a href="index.html">송원대학교</a></h1>
-                    <nav class="gnb">
+                    <nav class="gnb" id="skip_nav">
                         <button class="gnb_open">메뉴열기</button>
                         <div class="gnb_wrap">
                             <ul class="depth1">
@@ -164,7 +164,7 @@
             </div>
             <button title="퀵메뉴 닫기" class="close">닫기</button>
         </aside>
-        <section class="bookmark">
+        <section class="bookmark" id="skip_contents">
             <div class="wrapper">
                 <div class="tit_txt">
                     <h2>SONWON</h2>
@@ -194,13 +194,11 @@
                     <div class="tap_area">
                         <div class="tap_btn">
                             <ul role="tablist">
-                                <div class="tab_list">
-                                    <li id="tab_01" aria-selected="true" aria-controls="panel_01" role="tab" class="active"><button><span>공지사항</span></button></li>
-                                    <li id="tab_02" aria-selected="false" aria-controls="panel_02" role="tab"><button><span>취업안내</span></button></li>
-                                    <li id="tab_03" aria-selected="false" aria-controls="panel_03" role="tab"><button><span>봉사활동</span></button></li>
-                                </div>
-                                <div class="more"><a href="#n">더보기</a></div>
+                                <li id="tab_01" aria-selected="true" aria-controls="panel_01" role="tab" class="active"><button><span>공지사항</span></button></li>
+                                <li id="tab_02" aria-selected="false" aria-controls="panel_02" role="tab"><button><span>취업안내</span></button></li>
+                                <li id="tab_03" aria-selected="false" aria-controls="panel_03" role="tab"><button><span>봉사활동</span></button></li>
                             </ul>
+                            <div class="more"><a href="#n">더보기</a></div>
                         </div>
                         <div class="tap_cnt">
                             <div id="panel_01" role="tabpanel" aria-labelledby="tab_01" class="active">
@@ -348,6 +346,24 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="board2">
+            <div class="wrapper">
+                <div class="event">
+                    <div class="e_tit">
+                        <h2>행사</h2>
+                        <div class="btn_wrap">
+                            <button class="btn_prev">이전</button>
+                            <button class="btn_next">다음</button>
+                            <div class="more"><a href="#n">더보기</a></div>
+                        </div>
+                    </div>
+                    <div class="e_list">
+
+                    </div>
+                </div>
+                <div class="gallery"></div>
             </div>
         </section>
     </div>

@@ -266,7 +266,7 @@
     }
 }
 .board1 {
-    margin: 90px 0 0 0;
+    margin: 70px 0 70px 0;
 }
 .board1 h2 {
     font-size: 0;
@@ -279,6 +279,13 @@
 .board1 .notice {
     width: 40%;
 }
+.board1 .tap_area .tap_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(29, 29, 29, 0.2);
+}
 .board1 .tap_area .tap_btn ul {
     display: flex;
     align-items: center;
@@ -286,11 +293,6 @@
     font-size: 30px;
     font-weight: 700;
     color: #9d9d9d;
-    border-bottom: 1px solid rgba(29, 29, 29, 0.2);
-}
-.board1 .tap_area .tap_btn ul .tab_list {
-    display: flex;
-    flex-wrap: wrap;
 }
 .board1 .tap_area .tap_btn ul li button {
     display: block;
@@ -305,7 +307,7 @@
     color: #1D60DB;
     border-bottom: 3px solid #1D60DB;
 }
-.board1 .tap_area .tap_btn ul .more a{
+.board1 .tap_area .tap_btn .more a{
     position: relative;
     display: block;
     font-size: 0;
@@ -313,7 +315,7 @@
     width: 40px;
     height: 40px;
 }
-.board1 .tap_area .tap_btn ul .more a::before {
+.board1 .tap_area .tap_btn .more a::before {
     position: absolute;
     left: 0;
     top: 0;
@@ -326,8 +328,8 @@
     content: "";
     transition: 0.5s;
 }
-.board1 .tap_area .tap_btn ul .more a:hover::before {
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='19.5' fill='white' stroke='%231D60DB'/%3E%3Cmask id='mask0_345_2' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='8' y='8' width='24' height='24'%3E%3Crect x='8' y='8' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_345_2)'%3E%3Cpath d='M19.9992 28C19.8574 28 19.7388 27.9521 19.6433 27.8562C19.5478 27.7604 19.5 27.6417 19.5 27.5V20.5H12.5C12.3583 20.5 12.2396 20.452 12.1437 20.356C12.0479 20.26 12 20.1411 12 19.9992C12 19.8574 12.0479 19.7388 12.1437 19.6433C12.2396 19.5478 12.3583 19.5 12.5 19.5H19.5V12.5C19.5 12.3583 19.548 12.2396 19.644 12.1437C19.74 12.0479 19.8589 12 20.0008 12C20.1426 12 20.2612 12.0479 20.3567 12.1437C20.4522 12.2396 20.5 12.3583 20.5 12.5V19.5H27.5C27.6417 19.5 27.7604 19.548 27.8562 19.644C27.9521 19.74 28 19.8589 28 20.0008C28 20.1426 27.9521 20.2612 27.8562 20.3567C27.7604 20.4522 27.6417 20.5 27.5 20.5H20.5V27.5C20.5 27.6417 20.452 27.7604 20.356 27.8562C20.26 27.9521 20.1411 28 19.9992 28Z' fill='%231D60DB'/%3E%3C/g%3E%3C/svg%3E%0A");
+.board1 .tap_area .tap_btn .more a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='19.5' fill='%231D60DB' stroke='%231D60DB'/%3E%3Cmask id='mask0_369_9' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='8' y='8' width='24' height='24'%3E%3Crect x='8' y='8' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_369_9)'%3E%3Cpath d='M19.9992 28C19.8574 28 19.7388 27.9521 19.6433 27.8562C19.5478 27.7604 19.5 27.6417 19.5 27.5V20.5H12.5C12.3583 20.5 12.2396 20.452 12.1437 20.356C12.0479 20.26 12 20.1411 12 19.9992C12 19.8574 12.0479 19.7388 12.1437 19.6433C12.2396 19.5478 12.3583 19.5 12.5 19.5H19.5V12.5C19.5 12.3583 19.548 12.2396 19.644 12.1437C19.74 12.0479 19.8589 12 20.0008 12C20.1426 12 20.2612 12.0479 20.3567 12.1437C20.4522 12.2396 20.5 12.3583 20.5 12.5V19.5H27.5C27.6417 19.5 27.7604 19.548 27.8562 19.644C27.9521 19.74 28 19.8589 28 20.0008C28 20.1426 27.9521 20.2612 27.8562 20.3567C27.7604 20.4522 27.6417 20.5 27.5 20.5H20.5V27.5C20.5 27.6417 20.452 27.7604 20.356 27.8562C20.26 27.9521 20.1411 28 19.9992 28Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .board1 .tap_area .tap_cnt div[role="tabpanel"] {
     display: none; /*숨김*/
