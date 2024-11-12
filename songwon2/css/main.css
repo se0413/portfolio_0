@@ -370,24 +370,32 @@
     font-size: 22px;
     color: rgba(29, 29, 29, 0.6);
 }
-.board1 .calendar .c_top .nav {
+.board1 .calendar {
+    width: 60%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    margin-left: 40px;
 }
-.board1 .calendar .c_top .nav .current-date {
-    font-size: 35px;
-    font-weight: 700;
-  }
-.board1 .calendar .c_top .nav button {
+.board1 .calendar .calendar-container {
+    padding: 30px 20px 30px 30px;
+}
+.board1 .calendar .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.board1 .calendar .calendar-header button {
     position: relative;
     width: 40px;
     height: 40px;
     font-size: 0;
     line-height: 0;
 }
-.board1 .calendar .c_top .nav button::before {
+.board1 .calendar .calendar-header button::before {
     position: absolute;
     left: 0;
     top: 0;
@@ -398,56 +406,84 @@
     background-size: contain;
     content: "";
 }
-.board1 .calendar .c_top .nav button.btn_prev::before {
+.board1 .calendar .calendar-header button.prev-month::before {
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_283_882' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='40' height='40'%3E%3Crect x='40' width='40' height='40' transform='rotate(90 40 0)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_283_882)'%3E%3Cpath d='M16.8783 19.2749L21.3404 14.8128C21.4018 14.7514 21.4733 14.6999 21.555 14.6582C21.6364 14.6165 21.7236 14.5957 21.8167 14.5957C22.0031 14.5957 22.1635 14.6574 22.2979 14.7807C22.4326 14.904 22.5 15.0667 22.5 15.2686L22.5 24.7303C22.5 24.9322 22.4312 25.0949 22.2937 25.2182C22.1562 25.3415 21.9958 25.4032 21.8125 25.4032C21.7667 25.4032 21.609 25.3306 21.3396 25.1853L16.8783 20.7236C16.7756 20.6211 16.6964 20.5104 16.6408 20.3915C16.5853 20.2726 16.5575 20.142 16.5575 19.9995C16.5575 19.857 16.5853 19.7263 16.6408 19.6074C16.6964 19.4885 16.7756 19.3776 16.8783 19.2749Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
-.board1 .calendar .c_top .nav button.btn_next::before {
+.board1 .calendar .calendar-header button.next-month::before {
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_283_879' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='40' height='40'%3E%3Crect y='40' width='40' height='40' transform='rotate(-90 0 40)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_283_879)'%3E%3Cpath d='M23.1217 20.7251L18.6596 25.1872C18.5982 25.2486 18.5267 25.3001 18.445 25.3418C18.3636 25.3835 18.2764 25.4043 18.1833 25.4043C17.9969 25.4043 17.8365 25.3426 17.7021 25.2193C17.5674 25.096 17.5 24.9333 17.5 24.7314L17.5 15.2697C17.5 15.0678 17.5688 14.9051 17.7063 14.7818C17.8438 14.6585 18.0042 14.5968 18.1875 14.5968C18.2333 14.5968 18.391 14.6694 18.6604 14.8147L23.1217 19.2764C23.2244 19.3789 23.3036 19.4896 23.3592 19.6085C23.4147 19.7274 23.4425 19.858 23.4425 20.0005C23.4425 20.143 23.4147 20.2737 23.3592 20.3926C23.3036 20.5115 23.2244 20.6224 23.1217 20.7251Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
-.board1 .calendar .c_sub ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+.board1 .calendar .calendar-header .current-month {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.board1 .calendar .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
     text-align: center;
+}
+.board1 .calendar .weekday {
     font-size: 22px;
+    color: #1d1d1d;
+    padding: 8px 0;
 }
-.board1 .calendar .c_sub .weeks li {
-    font-weight: 500;
-}
-.board1 .calendar .c_sub .days {
-    margin-bottom: 20px;
-}
-.board1 .calendar .c_sub ul li {
-    width: calc(100% / 7);
-    position: relative;
-}
-.board1 .calendar .c_sub .days li {
-    z-index: 1;
-    padding: 15px 0;
-    cursor: pointer;
-}
-.board1 .calendar .c_sub .days li.inactive {
-    color: #aaa;
-}
-.board1 .calendar .c_sub .days li.active,
-.board1 .calendar .c_sub .days li.event {
-    color: #fff;
-    position: relative;
-}
-.board1 .calendar .c_sub .days li.active::before,
-.board1 .calendar .c_sub .days li.event::before {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.date {
     width: 40px;
     height: 40px;
-    background-color: #FFCD4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    z-index: -1;
-    content: "";
+    cursor: pointer;
+    margin: auto;
+    font-size: 22px;
 }
-.board1 .calendar .c_sub .days li.event::before {
+.date:hover {
     background-color: #1D60DB;
+    color: #fff;
+}
+.today {
+    background-color: #FFCD4F;
+    color: #fff;
+}
+.selected {
+    background-color: #1D60DB;
+    color: #fff;
+}
+.other-month {
+    color: #aaa;
+}
+.weekend {
+    color: #ff0000;
+}
+.board1 .calendar .events-panel {
+    padding: 20px;
+}
+.board1 .calendar .event-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+.board1 .calendar .event-date {
+    padding: 25px 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: #1D60DB;
+    color: #fff;
+}
+.board1 .calendar .event-description {
+    margin: 0 0 0 10px;
+    padding: 25px 15px;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.board1 .calendar span {
+    display: block;
+    line-height: 1.4;
+    height: 2.8em;
+    overflow: hidden;
 }
 
