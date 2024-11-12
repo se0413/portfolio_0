@@ -54,4 +54,31 @@ $(document).ready(function(){
             prevEl: '.tit_txt .btn_prev',
         },
     });
+
+    let tab_btn = $('.board1 .tap_area .tap_btn ul li') 
+    let tab_name
+    let tab_cnt = $('.board1 .tap_area .tap_cnt div[role="tabpanel"]')
+    let tab_cnt_prant = $('.board1 .tap_area .tap_cnt')
+
+    tab_btn.on('click', function(){
+        tab_btn.removeClass('active')
+        $(this).addClass('active')
+
+        tab_btn.attr('aria-selected', 'false')
+        $(this).attr('aria-selected', 'true')
+
+        tab_name = $(this).attr('aria-controls')
+        tab_name = '#'+ tab_name
+        console.log(tab_name)
+
+        tab_cnt.removeClass('active')
+        tab_cnt_prant.find(tab_name).addClass('active')
+        
+     })
+
+    $('.board1 .calendar .c_sub .days li').on('click', function(){
+        $('.board1 .calendar .c_sub .days li').removeClass('active')
+        $(this).addClass('active')  
+    })
+
 })
