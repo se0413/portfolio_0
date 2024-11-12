@@ -223,7 +223,7 @@ header .header_sub .gnb_wrap .depth1 > li.on .depth2 {
 .quick {
     position: fixed;
     right: 1.6%;
-    bottom: 100px;
+    bottom: 200px;
     z-index: 90; 
 }
 .quick .quick_ctn h2 {

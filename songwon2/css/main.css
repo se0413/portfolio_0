@@ -237,10 +237,10 @@
         padding: 20px 0;
     }
     .bookmark .tit_txt h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
     .bookmark .tit_txt p {
-        font-size: 20px;
+        font-size: 25px;
     }
     .bookmark .bm_list {
         margin: 20px 0;
@@ -284,7 +284,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
     color: #9d9d9d;
     border-bottom: 1px solid rgba(29, 29, 29, 0.2);
 }
@@ -301,6 +301,7 @@
 }
 .board1 .tap_area .tap_btn ul li.active span {
     padding: 20px 0;
+    font-weight: 900;
     color: #1D60DB;
     border-bottom: 3px solid #1D60DB;
 }
@@ -348,7 +349,8 @@
     font-size: 25px;
     transition: 0.3s;
 }
-.board1 .tap_area .tap_cnt ul li a:hover {
+.board1 .tap_area .tap_cnt ul li a:hover span,
+.board1 .tap_area .tap_cnt ul li a:hover em {
     color: #1D60DB;
 }
 .board1 .tap_area .tap_cnt ul li a strong {
@@ -377,7 +379,8 @@
     align-items: center;
     background-color: #f7f7f7;
     border-radius: 30px;
-    margin-left: 40px;
+    margin-left: 60px;
+    padding: 0 10px;
 }
 .board1 .calendar .calendar-container {
     padding: 30px 20px 30px 30px;
@@ -443,6 +446,23 @@
     background-color: #1D60DB;
     color: #fff;
 }
+.date.has-event {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+}
+.date.has-event::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #1D60DB;
+    border-radius: 50%;
+    content: "";
+    z-index: -1;
+}
 .today {
     background-color: #FFCD4F;
     color: #fff;
@@ -464,13 +484,20 @@
     display: flex;
     margin-bottom: 10px;
 }
+.board1 .calendar .t {
+    margin: 0;
+}
 .board1 .calendar .event-date {
-    padding: 25px 15px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #1D60DB;
+}
+.board1 .calendar .event-date span {
+    display: block;
     text-align: center;
     font-weight: 700;
     font-size: 25px;
-    border-radius: 15px;
-    background-color: #1D60DB;
+
     color: #fff;
 }
 .board1 .calendar .event-description {
@@ -486,4 +513,117 @@
     height: 2.8em;
     overflow: hidden;
 }
-
+.board1 .calendar .event-description span br {
+    display: none;
+}
+@media screen and (max-width: 1400px){
+    .board1 {
+        margin: 60px 0 0 0;
+    }
+    .board1 .wrapper {
+        display: block;
+    }
+    .board1 .notice {
+        width: auto;
+    }
+    .board1 .tap_area .tap_cnt ul {
+        margin: 30px 0 40px 0;
+    }
+    .board1 .tap_area .tap_cnt ul li {
+        width: calc(50% - 10px);
+    }
+    .board1 .tap_area .tap_cnt ul li a {
+        justify-content: flex-start;
+    }
+    .board1 .calendar {
+        width: auto;
+        margin-left: 0;
+    }
+    .board1 .calendar .events-panel {
+        width: 100%;
+    }
+    .board1 .calendar .event-description {
+        width: 100%;
+    }
+    .board1 .calendar .event-description span br {
+        display: block;
+    }
+}
+@media screen and (max-width: 1070px){
+    .board1 {
+        margin: 20px 0 0 0;
+    }
+    .board1 .tap_area .tap_btn ul {
+        font-size: 25px;
+    }
+    .board1 .tap_area .tap_btn ul li.active span {
+        border-bottom: 1px solid #1D60DB;
+    }
+    .board1 .tap_area .tap_btn ul .more a{
+        width: 30px;
+        height: 30px;
+    }
+    .board1 .tap_area .tap_cnt ul {
+        margin: 15px 0 35px 0;
+    }
+    .board1 .tap_area .tap_cnt ul li a {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .board1 .tap_area .tap_cnt ul li a strong {
+        padding: 3px 15px;
+        border-radius: 15px;
+    }
+    .board1 .tap_area .tap_cnt ul li a em {
+        font-size: 18px;
+    }
+    .board1 .calendar {
+        width: auto;
+        display: block;
+        border-radius: 15px;
+        margin-left: 0;
+    }
+    .board1 .calendar .calendar-container {
+        padding: 20px;
+    }
+    .board1 .calendar .calendar-header {
+        margin-bottom: 20px;
+    }
+    .board1 .calendar .calendar-header button {
+        width: 24px;
+        height: 24px;
+    }
+    .board1 .calendar .calendar-header .current-month {
+        font-size: 25px;
+    }
+    .board1 .calendar .calendar-grid {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 4px;
+    }
+    .board1 .calendar .weekday {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    .date {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .date.has-event::after {
+        width: 30px;
+        height: 30px;
+    }
+    .board1 .calendar .events-panel {
+        padding: 15px;
+    }
+    .board1 .calendar .event-date {
+        padding: 20px;
+    }
+    .board1 .calendar .event-date span {
+        font-size: 20px;
+    }
+    .board1 .calendar .event-description {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
