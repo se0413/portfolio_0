@@ -840,7 +840,8 @@
     background-color: #1D60DB;
     color: #fff;
 }
-.board3 .popup .p_list ul li a .photo{
+.board3 .popup .p_list .swiper {
+    height: 440px;
     border-radius: 30px;
 }
 .board3 .popup .p_list .swiper .swiper-pagination {

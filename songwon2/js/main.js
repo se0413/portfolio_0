@@ -229,7 +229,7 @@ $(document).ready(function(){
     const popup_swiper = new Swiper('.popup .swiper', {
 
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 5000000,
+            delay: 2500,
             disableOnInteraction: true,
         },
     
