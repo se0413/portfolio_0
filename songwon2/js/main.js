@@ -190,7 +190,39 @@ $(document).ready(function(){
                 parseInt($(this).text())
             );
         });
+    });
 
+    const event_swiper = new Swiper('.event .swiper', { 
+        slidesPerView: 1,
+        spaceBetween: 16,
+        breakpoints: {
+            1070: {  
+                slidesPerView:2,
+			    spaceBetween: 10,
+            },
+        },
+        centeredSlides: false, 
+        loop: false,  
+        navigation: {
+            nextEl: '.event .btn_next',
+            prevEl: '.event .btn_prev',
+        },
+    });
+    const gallery_swiper = new Swiper('.gallery .swiper', { 
+        slidesPerView: 1,
+        spaceBetween: 16,
+        breakpoints: {
+            1070: {  
+                slidesPerView:2,
+			    spaceBetween: 10,
+            },
+        },
+        centeredSlides: false, 
+        loop: false,  
+        navigation: {
+            nextEl: '.gallery .btn_next',
+            prevEl: '.gallery .btn_prev',
+        },
     });
 
 })
