@@ -208,6 +208,7 @@ $(document).ready(function(){
             prevEl: '.event .btn_prev',
         },
     });
+
     const gallery_swiper = new Swiper('.gallery .swiper', { 
         slidesPerView: 1,
         spaceBetween: 16,
@@ -223,6 +224,22 @@ $(document).ready(function(){
             nextEl: '.gallery .btn_next',
             prevEl: '.gallery .btn_prev',
         },
+    });
+
+    const popup_swiper = new Swiper('.popup .swiper', {
+
+        autoplay: {  /* 팝업 자동 실행 */
+            delay: 5000000,
+            disableOnInteraction: true,
+        },
+    
+        loop: true,  
+    
+        pagination: {  
+            el: '.swiper-pagination', 
+            clickable: true,  
+        },
+    
     });
 
 })

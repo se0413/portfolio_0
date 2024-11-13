@@ -309,7 +309,7 @@ header .header_sub .gnb_wrap .depth2 > li > a:hover {
     display: none;
 }
 .quick .quick_ctn ul li a {
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .quick .quick_ctn ul li a,
 .quick button {

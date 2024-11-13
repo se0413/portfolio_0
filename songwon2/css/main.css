@@ -75,23 +75,23 @@
 .visual .swiper .btn_wrap button.btn_stop::before {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_74_523' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_74_523)'%3E%3Cpath d='M10.1543 15.75C10.3668 15.75 10.5448 15.6781 10.6885 15.5343C10.832 15.3906 10.9038 15.2125 10.9038 15V9C10.9038 8.7875 10.8318 8.60942 10.688 8.46575C10.5443 8.32192 10.3662 8.25 10.1535 8.25C9.941 8.25 9.76292 8.32192 9.61925 8.46575C9.47575 8.60942 9.404 8.7875 9.404 9V15C9.404 15.2125 9.47583 15.3906 9.6195 15.5343C9.76333 15.6781 9.94158 15.75 10.1543 15.75ZM13.8465 15.75C14.059 15.75 14.2371 15.6781 14.3807 15.5343C14.5243 15.3906 14.596 15.2125 14.596 15V9C14.596 8.7875 14.5242 8.60942 14.3805 8.46575C14.2367 8.32192 14.0584 8.25 13.8458 8.25C13.6333 8.25 13.4552 8.32192 13.3115 8.46575C13.168 8.60942 13.0962 8.7875 13.0962 9V15C13.0962 15.2125 13.1682 15.3906 13.312 15.5343C13.4557 15.6781 13.6338 15.75 13.8465 15.75ZM12.0017 21.5C10.6877 21.5 9.45267 21.2507 8.2965 20.752C7.14033 20.2533 6.13467 19.5766 5.2795 18.7218C4.42433 17.8669 3.74725 16.8617 3.24825 15.706C2.74942 14.5503 2.5 13.3156 2.5 12.0017C2.5 10.6877 2.74933 9.45267 3.248 8.2965C3.74667 7.14033 4.42342 6.13467 5.27825 5.2795C6.13308 4.42433 7.13833 3.74725 8.294 3.24825C9.44967 2.74942 10.6844 2.5 11.9983 2.5C13.3123 2.5 14.5473 2.74933 15.7035 3.248C16.8597 3.74667 17.8653 4.42342 18.7205 5.27825C19.5757 6.13308 20.2528 7.13833 20.7518 8.294C21.2506 9.44967 21.5 10.6844 21.5 11.9983C21.5 13.3123 21.2507 14.5473 20.752 15.7035C20.2533 16.8597 19.5766 17.8653 18.7218 18.7205C17.8669 19.5757 16.8617 20.2528 15.706 20.7518C14.5503 21.2506 13.3156 21.5 12.0017 21.5ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
-.swiper-pagination-fraction,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.visual .swiper-pagination-fraction,
+.visual .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 0;
     left: 0;
     width: auto;
     font-size: 0;
     line-height: 0;
 }
-.swiper-pagination {
+.visual .swiper-pagination {
     position: relative;
     text-align: center;
 }
-.swiper-pagination-clickable .swiper-pagination-bullet {
+.visual .swiper-pagination-clickable .swiper-pagination-bullet {
     background-color: #fff;
     opacity: 100%;
 }
-.swiper-pagination-clickable .swiper-pagination-bullet-active {
+.visual .swiper-pagination-clickable .swiper-pagination-bullet-active {
     width: 45px;
     border-radius: 50px;
 }
@@ -114,7 +114,7 @@
         height: 20px;
         margin: 0 2px;
     }
-    .swiper-pagination-clickable .swiper-pagination-bullet-active {
+    .visual .swiper-pagination-clickable .swiper-pagination-bullet-active {
         width: 30px;
     }
 }
@@ -704,7 +704,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='20' fill='%231D60DB'/%3E%3Ccircle cx='20' cy='20' r='19.5' stroke='%231D60DB' stroke-opacity='0.6'/%3E%3Cmask id='mask0_380_6' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='8' y='8' width='24' height='24'%3E%3Crect x='8' y='8' width='24' height='24' fill='white'/%3E%3Crect x='8.5' y='8.5' width='23' height='23' stroke='%231D60DB' stroke-opacity='0.6'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_380_6)'%3E%3Cpath d='M19.9992 28C19.8574 28 19.7388 27.9521 19.6433 27.8562C19.5478 27.7604 19.5 27.6417 19.5 27.5V20.5H12.5C12.3583 20.5 12.2396 20.452 12.1437 20.356C12.0479 20.26 12 20.1411 12 19.9992C12 19.8574 12.0479 19.7388 12.1437 19.6433C12.2396 19.5478 12.3583 19.5 12.5 19.5H19.5V12.5C19.5 12.3583 19.548 12.2396 19.644 12.1437C19.74 12.0479 19.8589 12 20.0008 12C20.1426 12 20.2612 12.0479 20.3567 12.1437C20.4522 12.2396 20.5 12.3583 20.5 12.5V19.5H27.5C27.6417 19.5 27.7604 19.548 27.8562 19.644C27.9521 19.74 28 19.8589 28 20.0008C28 20.1426 27.9521 20.2612 27.8562 20.3567C27.7604 20.4522 27.6417 20.5 27.5 20.5H20.5V27.5C20.5 27.6417 20.452 27.7604 20.356 27.8562C20.26 27.9521 20.1411 28 19.9992 28Z' fill='white'/%3E%3Cpath d='M19.5125 20.5V20.4875H19.5H12.5C12.3615 20.4875 12.246 20.4407 12.1526 20.3472C12.0592 20.2536 12.0125 20.1379 12.0125 19.9992C12.0125 19.8606 12.0592 19.7451 12.1526 19.6521C12.2459 19.5591 12.3615 19.5125 12.5 19.5125H19.5H19.5125V19.5V12.5C19.5125 12.3615 19.5593 12.246 19.6528 12.1526C19.7464 12.0592 19.8621 12.0125 20.0008 12.0125C20.1394 12.0125 20.2549 12.0592 20.3479 12.1526C20.4409 12.2459 20.4875 12.3615 20.4875 12.5V19.5V19.5125H20.5H27.5C27.6385 19.5125 27.754 19.5593 27.8474 19.6528C27.9408 19.7464 27.9875 19.8621 27.9875 20.0008C27.9875 20.1394 27.9408 20.2549 27.8474 20.3479C27.7541 20.4409 27.6385 20.4875 27.5 20.4875H20.5H20.4875V20.5V27.5C20.4875 27.6385 20.4407 27.754 20.3472 27.8474C20.2536 27.9408 20.1379 27.9875 19.9992 27.9875C19.8606 27.9875 19.7451 27.9408 19.6521 27.8474C19.5591 27.7541 19.5125 27.6385 19.5125 27.5V20.5Z' stroke='%231D60DB' stroke-opacity='0.6' stroke-width='0.025'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .board2 .e_list {
-    padding: 40px 0;
+    padding: 40px 0 70px 0;
 }
 .board2 .e_list ul li a .photo img {
     transition: 0.5s;
@@ -717,7 +717,7 @@
 }
 @media screen and (max-width: 1400px){
     .board2 {
-        margin: 60px 0;
+        margin: 60px 0 0 0;
     }
 }
 @media screen and (max-width: 1070px){
@@ -739,4 +739,130 @@
     .board2 .e_list {
         padding: 20px 0;
     }
+}
+.board3 {
+    padding: 100px 0 ;
+    background-color: rgba(29, 96, 219, 0.05);
+}
+.board3 .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.board3 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.board3 .guide {
+    margin-right: 40px;
+}
+.board3 .guide,
+.board3 .popup {
+    width: 50%;
+}
+.board3 .g_top ul {
+    display: flex;
+    justify-content: space-between;
+}
+.board3 .g_top ul li {
+    position: relative;
+    background-color: #fff;
+    width: calc(33.33% - 12px);
+    height: 210px;
+    border-radius: 30px;
+    padding: 35px;
+}
+.board3 .g_top ul li::before {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 58px;
+    height: 82px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+.board3 .g_top ul li:nth-child(1):before {
+    background-image: url(../images/guide_1.png);
+}
+.board3 .g_top ul li:nth-child(2):before {
+    background-image: url(../images/guide_2.png);
+}
+.board3 .g_top ul li:nth-child(3):before {
+    background-image: url(../images/guide_3.png);
+}
+.board3 .g_top ul li a {
+    font-size: 25px;
+    font-weight: 700;
+}
+.board3 .g_sub {
+    background-color: #fff;
+    padding: 35px;
+    height: 210px;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+.board3 .g_sub strong {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+}
+.board3 .g_sub::before {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 115px;
+    height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/guide_4.png);
+    content: "";
+}
+.board3 .g_sub span {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0 30px 0;
+}
+.board3 .g_sub em a {
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #1D60DB;
+    border: 1px solid #1D60DB;
+    background-color: #fff;
+    padding: 7px 30px;
+    transition: 0.5s;
+}
+.board3 .g_sub em a:hover {
+    background-color: #1D60DB;
+    color: #fff;
+}
+.board3 .popup .p_list ul li a .photo{
+    border-radius: 30px;
+}
+.board3 .popup .p_list .swiper .swiper-pagination {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 30px 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.board3 .popup .p_list .swiper .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    opacity: 100;
+}
+.board3 .popup .p_list .swiper .swiper-pagination-clickable .swiper-pagination-bullet-active {
+    width: 20px;
+    background-color: #fff;
 }
