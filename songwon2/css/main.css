@@ -765,14 +765,19 @@
     justify-content: space-between;
 }
 .board3 .g_top ul li {
-    position: relative;
-    background-color: #fff;
     width: calc(33.33% - 12px);
+}
+.board3 .g_top ul li a {
+    position: relative;
+    display: block;
+    background-color: #fff;
     height: 210px;
     border-radius: 30px;
     padding: 35px;
+    font-size: 25px;
+    font-weight: 700;
 }
-.board3 .g_top ul li::before {
+.board3 .g_top ul li a::before {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -783,18 +788,14 @@
     background-size: contain;
     content: "";
 }
-.board3 .g_top ul li:nth-child(1):before {
+.board3 .g_top ul li:nth-child(1) a:before {
     background-image: url(../images/guide_1.png);
 }
-.board3 .g_top ul li:nth-child(2):before {
+.board3 .g_top ul li:nth-child(2) a:before {
     background-image: url(../images/guide_2.png);
 }
-.board3 .g_top ul li:nth-child(3):before {
+.board3 .g_top ul li:nth-child(3) a:before {
     background-image: url(../images/guide_3.png);
-}
-.board3 .g_top ul li a {
-    font-size: 25px;
-    font-weight: 700;
 }
 .board3 .g_sub {
     background-color: #fff;
@@ -866,4 +867,101 @@
 .board3 .popup .p_list .swiper .swiper-pagination-clickable .swiper-pagination-bullet-active {
     width: 20px;
     background-color: #fff;
+}
+@media screen and (max-width: 1400px){
+    .board3 .guide {
+        width: 70%;
+    }
+    .board3 .popup {
+        width: 30%;
+    }
+    .board3 .popup .photo img {
+        width: auto;
+    }
+}
+@media screen and (max-width: 1070px){
+    .board3 {
+        padding: 70px 0;
+    }
+    .board3 .wrapper {
+        display: block;
+    }
+    .board3 .guide {
+        width: auto;
+        margin-right: 0;
+    }
+    .board3 h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .board3 .popup {
+        width: auto;
+    }
+    .board3 .popup .photo img {
+        width: 100%;
+    }
+    .board3 .g_top ul li a {
+        height: 120px;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .board3 .g_top ul li a::before {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 28px;
+        height: 62px;
+    }
+    .board3 .g_sub {
+        padding: 20px;
+        height: 180px;
+        border-radius: 15px;
+        margin: 10px 0 40px 0;
+    }
+    .board3 .g_sub strong {
+        font-size: 20px;
+    }
+    .board3 .g_sub::before {
+        right: 20px;
+        bottom: -19px;
+        width: 75px;
+        height: 150px;
+    }
+    .board3 .g_sub span {
+        font-size: 18px;
+        margin: 5px 0 20px 0;
+    }
+    .board3 .g_sub em a {
+        border-radius: 50px;
+        font-size: 18px;
+        padding: 7px 25px;
+    }
+    .board3 .popup .p_list .swiper {
+        height: 280px;
+        border-radius: 15px;
+    }
+    .board3 .popup .p_list .swiper .swiper-pagination {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 30px 30px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .board3 .popup .p_list .swiper .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        opacity: 100;
+    }
+    .board3 .popup .p_list .swiper .swiper-pagination-clickable .swiper-pagination-bullet-active {
+        width: 20px;
+        background-color: #fff;
+    }
 }
