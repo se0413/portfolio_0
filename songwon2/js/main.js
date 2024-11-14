@@ -244,10 +244,14 @@ $(document).ready(function(){
 
     const news_swiper = new Swiper('.news .swiper', { 
         slidesPerView: 1,
-        spaceBetween: 16,
+        spaceBetween: 10,
         breakpoints: {
-            1070: {  
+            1400: {  
                 slidesPerView:3,
+			    spaceBetween: 15,
+            },
+            1070: {  
+                slidesPerView:2,
 			    spaceBetween: 15,
             },
         },

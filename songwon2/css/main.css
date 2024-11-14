@@ -622,7 +622,7 @@
         height: 30px;
     }
     .board1 .calendar .events-panel {
-        padding: 15px;
+        padding: 10px;
     }
     .board1 .calendar .event-date {
         padding: 20px;
@@ -723,13 +723,19 @@
 }
 @media screen and (max-width: 1070px){
     .board2 {
-        margin: 40px 0;
+        margin: 40px 0 20px 0;
+    }
+    .board2 .gallery {
+        padding-left: 5px;
+    }
+    .board2 .event {
+        padding-right: 5px;
     }
     .board2 .e_tit {
         padding-bottom: 15px;
     }
     .board2 .e_tit h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
     .board2 .e_tit .btn_wrap button,
     .board2 .e_tit .btn_wrap .more a {
@@ -739,6 +745,23 @@
     }
     .board2 .e_list {
         padding: 20px 0;
+    }
+    .board2 .e_list ul li .photo {
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width: 440px){
+    .board2 .wrapper {
+        display: block;
+    }
+    .board2 .event {
+        width: auto;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .board2 .gallery {
+        width: auto;
+        padding: 0;
     }
 }
 .board3 {
@@ -885,7 +908,7 @@
 }
 @media screen and (max-width: 1070px){
     .board3 {
-        padding: 70px 0;
+        padding: 40px 0;
     }
     .board3 .wrapper {
         display: block;
@@ -895,11 +918,13 @@
         margin-right: 0;
     }
     .board3 h2 {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
     .board3 .popup {
         width: auto;
+        margin: 0;
+        padding: 0;
     }
     .board3 .popup .photo img {
         width: 100%;
@@ -908,7 +933,7 @@
         height: 120px;
         border-radius: 15px;
         padding: 20px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .board3 .g_top ul li a::before {
         position: absolute;
@@ -921,16 +946,13 @@
         padding: 20px;
         height: 180px;
         border-radius: 15px;
-        margin: 10px 0 40px 0;
+        margin: 20px 0 40px 0;
     }
     .board3 .g_sub strong {
         font-size: 20px;
     }
     .board3 .g_sub::before {
-        right: 20px;
-        bottom: -19px;
-        width: 75px;
-        height: 150px;
+        display: none;
     }
     .board3 .g_sub span {
         font-size: 18px;
@@ -969,6 +991,12 @@
         background-color: #fff;
     }
 }
+@media screen and (max-width: 520px){
+    .board3 .g_top ul li a::before {
+        width: 18px;
+        bottom: 0;
+    }
+}
 .board4 {
     background-color: #0A2471;
     padding: 90px 0 100px 0;
@@ -976,6 +1004,7 @@
 .board4 .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .board4 .news {
     width: 65%;
@@ -1145,4 +1174,96 @@
 .board4 .youtube .photo img {
     height: 400px;
     transition: 0.5s;
+}
+@media screen and (max-width: 1070px){
+    .board4 {
+        padding: 40px 0 40px 0;
+    }
+    .board4 .news {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .board4 h2 {
+        font-size: 18px;
+    }
+    .board4 .youtube {
+        width: 50%;
+    }
+    .board4 .e_tit {
+        margin-bottom: 15px;
+    }
+    .board4 .e_tit .btn_wrap button,
+    .board4 .e_tit .btn_wrap .more a {
+        width: 30px;
+        height: 30px;
+        margin-left: 8px;
+    }
+    .board4 .e_list ul {
+        margin-top: 0;
+    }
+    .board4 .e_list ul li:hover {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+    .board4 .e_list ul li .photo {
+        border-radius: 15px 15px 0 0;
+    }
+    .board4 .e_list ul li .photo img {
+        height: 200px;
+    }
+    .board4 .e_list ul li {
+        border-radius: 15px;
+    }
+    .board4 .e_list ul li a {
+        display: block;
+        height: 320px;
+    }
+    .board4 .e_list ul li a strong {
+        font-size: 20px;
+        margin: 20px 20px 5px 20px;
+    }
+    .board4 .e_list ul li a span {
+        font-size: 18px;
+        margin: 0px 20px 20px 20px;
+    }
+    .board4 .youtube .e_tit a {
+        font-size: 18px;
+        padding: 5px 15px 5px 50px;
+    }
+    .board4 .youtube .e_tit a::before {
+        left: 16px;
+        top: 8px;
+        width: 22px;
+        height: 15px;
+    }
+    .board4 .youtube > a {
+        margin-top: 0;
+    }
+    .board4 .youtube .photo {
+        border-radius: 15px;
+    }
+    .board4 .youtube > a:hover .photo::before {
+        width: 60px;
+        height: 40px;
+    }
+    .board4 .youtube .photo img {
+        height: 320px;
+    }
+}
+@media screen and (max-width: 660px){
+    .board4 .youtube .e_tit > a {
+        display: none;
+    }
+}
+@media screen and (max-width: 440px){
+    .board4 .wrapper {
+        display: block;
+    }
+    .board4 .news {
+        width: auto;
+        margin: 0 0 40px 0;
+    }
+    .board4 .youtube {
+        width: auto;
+    }
 }
