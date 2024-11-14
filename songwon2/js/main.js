@@ -229,7 +229,7 @@ $(document).ready(function(){
     const popup_swiper = new Swiper('.popup .swiper', {
 
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: true,
         },
     
@@ -240,6 +240,23 @@ $(document).ready(function(){
             clickable: true,  
         },
     
+    });
+
+    const news_swiper = new Swiper('.news .swiper', { 
+        slidesPerView: 1,
+        spaceBetween: 16,
+        breakpoints: {
+            1070: {  
+                slidesPerView:3,
+			    spaceBetween: 15,
+            },
+        },
+        centeredSlides: false, 
+        loop: false,  
+        navigation: {
+            nextEl: '.news .btn_next',
+            prevEl: '.news .btn_prev',
+        },
     });
 
 })
