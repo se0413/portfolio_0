@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SDKukdetopokki';
+    src: url('../fonts/SDKukdetopokki-aLt.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SDKukdetopokki';
+    src: url('../fonts/SDKukdetopokki-bBd.otf');
+    font-weight: 700;
+    font-style: normal;
+}
