@@ -1,0 +1,89 @@
+.header { 
+    position: fixed; 
+    right: 0;
+    top: 50%;
+    text-align: center;
+    z-index: 100;
+} 
+.header ul li {
+    width: 215px;
+    height: 85px;
+    background-color: #00249D;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 85px;
+    font-size: 30px;
+}
+.header ul li.active { 
+    background-color: #FFD12D;
+    border-color: #00249D;
+} 
+.main {
+    position: relative;
+    background-color: #EDF3FF;
+}
+.main .wrapper .box {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.main .artboard1 {
+    position: relative;
+    top: 165px;
+    width: 1090px;
+    height: 615px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #00249D;
+    z-index: 2;
+}
+.main .artboard1::before {
+    position: absolute;
+    left: 70px;
+    bottom: 110px;
+    width: 937px;
+    height: 325px;
+    background-position: center center;
+    background: url(../images/main_txt.png);
+    content: "";
+}
+.main .artboard1 span,
+.main .artboard2 span {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 30px 30px 30px 80px;
+    border-bottom: 1px solid #00249D;
+}
+.main .artboard1 span::before {
+    position: absolute;
+    left: 35px;
+    top: 26px;
+    width: 34px;
+    height: 34px;
+    background-color: #FFD12D;
+    border: 1px solid #00249D;
+    content: "";
+}
+.main .artboard2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1090px;
+    height: 615px;
+    border-radius: 30px;
+    background-color: #A9B8EB;
+    border: 1px solid #00249D;
+}
+.main .artboard2 span::before {
+    position: absolute;
+    left: 35px;
+    top: 26px;
+    width: 34px;
+    height: 34px;
+    background-color: #B9D0FF;
+    border: 1px solid #00249D;
+    content: "";
+}
