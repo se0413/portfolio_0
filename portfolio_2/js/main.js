@@ -8,9 +8,10 @@ $(document).ready(function(){
 	let areaH
 	let areaName
 	let scrollTop
+
 	menuItem.on('click', function(){
 		sectionName = $(this).attr('data-link')
-		moveTop = $('*[data-menu="'+sectionName+'"]').offset().top - menuName.height()
+		moveTop = $('*[data-menu="'+sectionName+'"]').offset().top
 		$('html, body').animate({
 			scrollTop : moveTop
 		}, 500)
@@ -25,7 +26,7 @@ $(document).ready(function(){
 			areaTop = $('*[data-menu]').eq(idx).offset().top
 			areaH = $('*[data-menu]').eq(idx).height()
 			areaName = $('*[data-menu]').eq(idx).attr('data-menu')
-			if((scrollTop >= areaTop - menuName.height()) && (scrollTop < areaTop + areaH - menuName.height())){
+			if((scrollTop >= areaTop) && (scrollTop < areaTop + areaH)){
 				menuItem.removeClass('active')
 				menuItem.siblings('[data-link="'+areaName+'"]').addClass('active')
 			}else if(scrollTop < $('*[data-menu]').first().offset().top){
