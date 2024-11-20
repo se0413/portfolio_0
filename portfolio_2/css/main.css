@@ -307,7 +307,6 @@
 .profile .certificate:hover,
 .profile .coding:hover,
 .profile .design:hover {
-    border: 3px solid #00249D;
     z-index: 5;
 }
 .profile .coding:hover ul li:nth-child(1):before {
