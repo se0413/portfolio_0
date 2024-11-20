@@ -86,7 +86,7 @@
 .profile .p_box {
     position: relative;
     left: 0;
-    top: 10%;
+    top: 0;
     height: 1090px;
 }
 .profile .education,
