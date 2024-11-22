@@ -384,6 +384,9 @@
 }
 .web .a_box .tap_area .tap_btn > ul > li.active button {
     font-weight: 700;
+    border: 1px solid #00249D;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 .web .a_box .tap_area .tap_cnt .detail {
     display: flex;
@@ -445,6 +448,7 @@
     font-size: 25px;
     padding: 40px;
     text-align: center;
+    line-height: 35px;
 }
 .web .a_box .tap_area .tap_cnt .tabborad2 .list2 .more a {
     display: block;
