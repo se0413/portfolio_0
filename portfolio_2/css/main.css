@@ -330,7 +330,84 @@
 .profile .design:hover ul li:nth-child(4):before {
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='59' height='59' rx='9.5' fill='%23333333' stroke='%2300249D'/%3E%3Ccircle cx='36.5' cy='30.5' r='6.5' fill='%231ABCFE'/%3E%3Cpath d='M17 43.5C17 39.9101 19.9101 37 23.5 37H30V43.5C30 47.0899 27.0899 50 23.5 50C19.9101 50 17 47.0899 17 43.5Z' fill='%230ACF83'/%3E%3Cpath d='M17 17.5C17 13.9101 19.9101 11 23.5 11H30V24H23.5C19.9101 24 17 21.0899 17 17.5Z' fill='%23F24E1E'/%3E%3Cpath d='M17 30.5C17 26.9101 19.9101 24 23.5 24H30V37H23.5C19.9101 37 17 34.0899 17 30.5Z' fill='%23A259FF'/%3E%3Cpath d='M43 17.5C43 21.0899 40.0899 24 36.5 24L30 24L30 11L36.5 11C40.0899 11 43 13.9101 43 17.5Z' fill='%23FF7262'/%3E%3C/svg%3E%0A");
 }
-.another h1 {
+.web h1 {
     font-size: 0;
     line-height: 0;
+}
+.web .a_box {
+    border-radius: 30px;
+    background-color: #A9B8EB;
+    border: 1px solid #00249D;
+    padding: 80px;
+}
+.web .a_box .tap_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.web .a_box .tap_cnt div[role="tabpanel"] {
+    display: none; 
+}
+.web .a_box .tap_cnt div[role="tabpanel"].active {
+    display: block;
+}
+.web .a_box .tap_area .tap_btn > ul > li {
+    margin: 40px 0;
+}
+.web .a_box .tap_area .tap_btn > ul > li button {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    padding-top: 80px;
+}
+.web .a_box .tap_area .tap_btn > ul > li button::before {
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    width: 75px;
+    height: 67px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='74' height='67' viewBox='0 0 74 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5C1 2.79086 2.79086 1 5 1H35.7419C37.5343 1 39.108 2.19242 39.5928 3.91806L57.0352 66H1V5Z' fill='%23FFE177' stroke='%2300249D' stroke-width='2'/%3E%3Cpath d='M30.2581 13.1569H30.348L30.4364 13.1409L67.7705 6.37411C70.2252 5.92919 72.4839 7.81526 72.4839 10.31V65.9997H1V17.1569C1 14.9478 2.79086 13.1569 5 13.1569H30.2581Z' fill='%23FFD12D' stroke='%2300249D' stroke-width='2'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.web .a_box .tap_area .tap_btn > ul > li.active button {
+    font-weight: 700;
+}
+.web .a_box .tap_area .tap_cnt .detail {
+    display: flex;
+}
+.web .a_box .tap_area .tap_cnt .tabborad1 {
+    border-radius: 30px;
+    border: 1px solid #00249D;
+    background-color: #fff;
+    width: 900px;
+}
+.web .a_box .tap_area .tap_cnt .tabborad1 > strong {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid #00249D;
+    padding: 0 40px 0 85px;
+    line-height: 85px;
+}
+.web .a_box .tap_area .tap_cnt .tabborad1 > strong::before {
+    position: absolute;
+    left: 30px;
+    top: 23px;
+    width: 34px;
+    height: 34px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='31' viewBox='0 0 34 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 5C0.5 2.51472 2.51472 0.5 5 0.5H14.5015C16.518 0.5 18.2883 1.84148 18.8338 3.78282L26.3402 30.5H0.5V5Z' fill='%23FFE177' stroke='%2300249D'/%3E%3Cpath d='M14 6.125H14.0449L14.0892 6.11698L28.1975 3.55986C30.959 3.05932 33.5 5.18115 33.5 7.98772V30.5H0.5V10.625C0.5 8.13972 2.51472 6.125 5 6.125H14Z' fill='%23FFD12D' stroke='%2300249D'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.web .a_box .tap_area .tap_cnt .tabborad1 .photo {
+    padding: 40px;
 }
