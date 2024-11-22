@@ -334,11 +334,18 @@
     font-size: 0;
     line-height: 0;
 }
+.web .wrapper {
+    position: relative;
+}
 .web .a_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 30px;
     background-color: #A9B8EB;
     border: 1px solid #00249D;
-    padding: 80px;
+    padding: 40px;
 }
 .web .a_box .tap_area {
     display: flex;
@@ -380,12 +387,14 @@
 }
 .web .a_box .tap_area .tap_cnt .detail {
     display: flex;
+    align-items: center;
+    margin: 0 0 0 70px;
 }
 .web .a_box .tap_area .tap_cnt .tabborad1 {
     border-radius: 30px;
     border: 1px solid #00249D;
     background-color: #fff;
-    width: 900px;
+    width: 600px;
 }
 .web .a_box .tap_area .tap_cnt .tabborad1 > strong {
     position: relative;
@@ -410,4 +419,45 @@
 }
 .web .a_box .tap_area .tap_cnt .tabborad1 .photo {
     padding: 40px;
+}
+.web .a_box .tap_area .tap_cnt .tabborad2 .list1 {
+    width: 400px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #00249D;
+    padding: 40px;
+    margin: 0 0 0 40px;
+}
+.web .a_box .tap_area .tap_cnt .tabborad2 .list1 strong {
+    display: block;
+    font-size: 25px;
+    line-height: 50px;
+}
+.web .a_box .tap_area .tap_cnt .tabborad2 .list2 {
+    width: 430px;
+    border-radius: 30px;
+    background-color: #EDF3FF;
+    border: 1px solid #00249D;
+    margin: 30px 0 0 80px;
+}
+.web .a_box .tap_area .tap_cnt .tabborad2 .list2 strong {
+    display: block;
+    font-size: 25px;
+    padding: 40px;
+    text-align: center;
+}
+.web .a_box .tap_area .tap_cnt .tabborad2 .list2 .more a {
+    display: block;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-top: 1px solid #00249D;
+    padding: 30px 0;
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    transition: 0.5s;
+}
+.web .a_box .tap_area .tap_cnt .tabborad2 .list2 .more a:hover {
+    color: #fff;
+    background-color: #00249D;
 }

@@ -37,10 +37,10 @@ $(document).ready(function(){
 		});
 	}
 
-	let tab_btn = $('.another .tap_area .tap_btn ul li') 
+	let tab_btn = $('.web .tap_area .tap_btn ul li') 
     let tab_name
-    let tab_cnt = $('.another .tap_area .tap_cnt div[role="tabpanel"]')
-    let tab_cnt_prant = $('.another .tap_area .tap_cnt')
+    let tab_cnt = $('.web .tap_area .tap_cnt div[role="tabpanel"]')
+    let tab_cnt_prant = $('.web .tap_area .tap_cnt')
 
     tab_btn.on('click', function(){
         tab_btn.removeClass('active')
