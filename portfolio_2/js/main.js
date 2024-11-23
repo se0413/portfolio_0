@@ -58,6 +58,40 @@ $(document).ready(function(){
         
     })
 
+	let tab_btn2 = $('.another .tap_area .tap_btn ul li') 
+    let tab_name2
+    let tab_cnt2 = $('.another .tap_area .tap_cnt div[role="tabpanel"]')
+    let tab_cnt2_prant = $('.another .tap_area .tap_cnt')
 
+    tab_btn2.on('click', function(){
+        tab_btn2.removeClass('active')
+        $(this).addClass('active')
+
+        tab_btn2.attr('aria-selected', 'false')
+        $(this).attr('aria-selected', 'true')
+
+        tab_name2 = $(this).attr('aria-controls')
+        tab_name2 = '#'+ tab_name2
+        console.log(tab_name2)
+
+        tab_cnt2.removeClass('active')
+        tab_cnt2_prant.find(tab_name2).addClass('active')
+        
+    })
+
+	$(window).on('scroll mousemove', function(e){ 
+		$('.cursor').css('left', e.pageX + 'px');
+		$('.cursor').css('top', e.pageY + 'px');
+	});
+	$('a').hover(function(){
+		$('.cursor').toggleClass('on');
+	});
+
+	$('.another .a_box .tap_area .tap_cnt .popup_d .tabborad2 .list2 .more a').on('click', function(){
+		$('.popup').show()
+	})
+	$('.popup .popup_photo .btn_close').on('click', function(){
+		$('.popup').hide()
+	})
 
 })

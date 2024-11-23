@@ -1,258 +1,302 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="portfolio/js/jquery-3.7.1.min.js"></script>
-    <script src="portfolio/js/fullpage.min.js"></script> <!--풀 페이지 js-->
-    <link rel="stylesheet" href="portfolio/css/fullpage.css"> <!--풀 페이지 css-->
-    <script src="portfolio/js/main.js"></script>
-    <link rel="stylesheet" href="portfolio/css/main.css">
+    <script src="portfolio_2/js/jquery-3.7.1.min.js"></script>
+    <script src="portfolio_2/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="portfolio_2/css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Portfolio</title>
 </head>
 <body>
-    <div id="fullpage">
-        <section class="section fp-auto-height-responsive main"> 
+    <div id="wrap">
+        <div class="cursor"> click !</div> 
+        <div class="header">
+            <nav class="gnb">
+                <div class="gnb_wrap">
+                    <ul>
+                        <li data-link="main"><span>Main</span></li>
+                        <li data-link="profile"><span>Profile</span></li>
+                        <li data-link="web"><span>Web</span></li>
+                        <li data-link="another"><span>Another</span>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <aside class="tool">
+            <ul>
+                <li>ico1</li>
+                <li>ico2</li>
+                <li>ico3</li>
+                <li>ico4</li>
+            </ul>
+            <div class="connect">
+                <strong class="c">C</strong>
+                <strong class="c_list">
+                    <span>010-6348-0771</span>
+                    <span>tldms7133@naver.com</span>
+                </strong>
+            </div>
+        </aside>
+        <section data-menu="main" class="main">
             <h1>main</h1>
-            <div class="recode">
-                <div class="photo1"><img src="portfolio/images/recode.png" alt="레코드 그림"></div>
-                <div class="photo2"><img src="portfolio/images/mypalette_txt.png" alt="my palette"></div>
+            <div class="wrapper">
+                <div class="box">
+                    <div class="artboard1"><span>Artboard01</span></div>
+                    <div class="artboard2"><span>Artboard02</span></div>
+                </div>
             </div>
         </section>
-        <section class="section fp-auto-height-responsive iam"> 
-            <h1>i am</h1>
-            <div class="iam_l">
-                <div class="top">
-                    <ul>
-                        <li>
-                            <strong>Profile</strong>
-                            <ul>
-                                <li>황시은</li>
-                                <li>1999.04.13</li>
-                                <li>010-6348-0771</li>
-                                <li>tldms7133@naver.com</li>
+        <section data-menu="profile" class="profile">
+            <h1>profile</h1>
+            <div class="wrapper">
+                <div class="p_box">
+                    <div class="education">
+                        <strong><span>Education</span></strong>
+                        <ul>
+                            <li>
+                                <span>2021.02</span>
+                                <em>충북보건과학대학교 작업치료과 졸업</em>
+                            </li>
+                            <li>
+                                <span>2023.07~2023.08</span>
+                                <em>한국아이티 전문 학원 / 적중 일러스트(GTQi) 한 번에 끝내기 과정 수료</em>
+                            </li>
+                            <li>
+                                <span>2024.04~2024.09</span>
+                                <em>이지디자인 컴퓨터 학원 / 멀티미디어 웹앱디자인&웹퍼블리셔 및 영상콘텐츠 제작과정 수료 및 개근상</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="work">
+                        <strong><span>Work experience</span></strong>
+                        <ul>
+                            <li>
+                                <span>2021.04 ~ 2023.05</span>
+                                <em>청주24시고려동물메디컬센터 / 병원코디네이터</em>
+                            </li>
+                            <li>
+                                <span>2023.08 ~ 2024.02</span>
+                                <em>청주김안과의원 / 병원코디네이터, 진료 어시스트</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="photoimg">
+                        <strong><span>Photo img</span></strong>
+                        <div class="photo"><img src="portfolio_2/images/my_photo.png" alt="프로필사진"></div>
+                    </div>
+                    <div class="certificate">
+                        <strong><span>Certificate</span></strong>
+                        <ul>
+                            <li>
+                                <span>2020.04</span>
+                                <em>미술심리상담지도사1급</em>
+                            </li>
+                            <li>
+                                <span>2021.02</span>
+                                <em>작업치료사</em>
+                            </li>
+                            <li>
+                                <span>2021.03</span>
+                                <em>병원코디네이터CS</em>
+                            </li>
+                            <li>
+                                <span>2024.07</span>
+                                <em>GTQ포토샵1급</em>
+                            </li>
+                            <li>
+                                <span>2024.09</span>
+                                <em>웹디자인기능사</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coding">
+                        <strong><span>Coding skill</span></strong>
+                        <ul>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>js</li>
+                        </ul>
+                    </div>
+                    <div class="design">
+                        <strong><span>Design skill</span></strong>
+                        <ul>
+                            <li>illustrator</li>
+                            <li>photoshop</li>
+                            <li>xd</li>
+                            <li>figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-menu="web" class="web">
+            <h1>web</h1>
+            <div class="wrapper">
+                <div class="a_box">
+                    <div class="tap_area">
+                        <div class="tap_btn">
+                            <ul role="tablist">
+                                <li id="tab_01" aria-selected="true" aria-controls="panel_01" role="tab" class="active"><button><span>site01</span></button></li>
+                                <li id="tab_02" aria-selected="false" aria-controls="panel_02" role="tab"><button><span>site02</span></button></li>
+                                <li id="tab_03" aria-selected="false" aria-controls="panel_03" role="tab"><button><span>site03</span></button></li>
+                                <li id="tab_04" aria-selected="false" aria-controls="panel_04" role="tab"><button><span>site04</span></button></li>
                             </ul>
-                        </li>
-                        <li>
-                            <strong>Education</strong>
-                            <ul>
-                                <li>
-                                    <span>2021.02</span>
-                                    <strong>충북보건과학대학교 작업치료과 졸업</strong>
-                                </li>
-                                <li>
-                                    <span>2023.07~2023.08</span>
-                                    <strong>한국아이티 전문 학원 / 적중 일러스트(GTQi) 한 번에 끝내기 과정 수료</strong>
-                                </li>
-                                <li>
-                                    <span>2024.04~2024.09</span>
-                                    <strong>이지디자인 컴퓨터 학원 / 멀티미디어 웹앱디자인&웹퍼블리셔 및 영상콘텐츠 제작과정 수료 및 개근상</strong>
-                                </li>
+                        </div>
+                        <div class="tap_cnt">
+                            <div id="panel_01" role="tabpanel" aria-labelledby="tab_01" class="active">
+                                <div class="detail">
+                                    <div class="tabborad1">
+                                        <strong>삼척시청</strong>
+                                        <div class="photo"><a href="samcheck/index.html" target="_blank" title="새창열림"><img src="portfolio_2/images/Project1.png" alt="삼척시청 홈페이지 사진"></a></div>
+                                    </div>
+                                    <div class="tabborad2">
+                                        <div class="list1">
+                                            <strong>100% 본인 디자인 및 코딩</strong>
+                                            <strong>제작기간 : 2024.9.13 ~ 09.23</strong>
+                                            <strong>아이콘 & 팝업 본인 디자인</strong>
+                                            <strong>PC버전</strong>
+                                        </div>
+                                        <div class="list2">
+                                            <strong>즐겨찾는 서비스. 사용자별 서비스를 배치하여 편의성을 높였고 관광 및 여행 등 정보를 알기 쉽도록 레이아웃하였습니다.</strong>
+                                            <div class="more"><a href="samcheck/index.html" target="_blank" title="새창열림">홈페이지 방문하기</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel_02" role="tabpanel" aria-labelledby="tab_02">
+                                <div class="detail">
+                                    <div class="tabborad1">
+                                        <strong>송원대학교</strong>
+                                        <div class="photo"><a href="songwon2/index.html" target="_blank" title="새창열림"><img src="portfolio_2/images/Project4.png" alt="송원대학교 홈페이지 사진"></a></div>
+                                    </div>
+                                    <div class="tabborad2">
+                                        <div class="list1">
+                                            <strong>100% 본인 디자인 및 코딩</strong>
+                                            <strong>제작기간 : 2024.10.14~10.21</strong>
+                                            <strong>반응형 제작</strong>
+                                        </div>
+                                        <div class="list2">
+                                            <strong>필요한 정보를 우선시하여 레이아웃 및 배치하였으며, 교내 행사와 공모전 등 상시 업데이트 되는 정보를 한눈에 알 수 있도록 디자인하였습니다.</strong>
+                                            <div class="more"><a href="songwon2/index.html" target="_blank" title="새창열림">홈페이지 방문하기</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel_03" role="tabpanel" aria-labelledby="tab_03">
+                                <div class="detail">
+                                    <div class="tabborad1">
+                                        <strong>한국농어촌희망재단</strong>
+                                        <div class="photo"><a href="hope_foundation/index.html" target="_blank" title="새창열림"><img src="portfolio_2/images/Project2.png" alt="한국농어촌희망재단 홈페이지 사진"></a></div>
+                                    </div>
+                                    <div class="tabborad2">
+                                        <div class="list1">
+                                            <strong>100% 본인 디자인 및 코딩</strong>
+                                            <strong>제작기간 : 2024.09.12~09.19</strong>
+                                            <strong>아이콘 본인 디자인</strong>
+                                            <strong>반응형 제작</strong>
+                                        </div>
+                                        <div class="list2">
+                                            <strong>재단만의 다양한 영상 컨텐츠를 장점으로 살려 배치하였으며, 농어촌의 컬러매치와 아이콘 제작 및 정보 수치화를 통해 재단의 특색을 살리는 것에 중점을 두었습니다.</strong>
+                                            <div class="more"><a href="hope_foundation/index.html" target="_blank" title="새창열림">홈페이지 방문하기</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel_04" role="tabpanel" aria-labelledby="tab_04">
+                                <div class="detail">
+                                    <div class="tabborad1">
+                                        <strong>천안시립미술관</strong>
+                                        <div class="photo"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림"><img src="portfolio_2/images/Project3.png" alt="천안시립미술관 홈페이지 사진"></a></div>
+                                    </div>
+                                    <div class="tabborad2">
+                                        <div class="list1">
+                                            <strong>100% 본인 디자인 및 코딩</strong>
+                                            <strong>제작기간 : 2024.09.04~09.11</strong>
+                                            <strong>반응형 제작</strong>
+                                        </div>
+                                        <div class="list2">
+                                            <strong>미술관에 직접 방문한 느낌을 전달하기 위해 무채색 계열의 작품이 돋보이도록 색감을 정했으며 모던하나 개성적이게 디자인하였습니다.</strong>
+                                            <div class="more"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림">홈페이지 방문하기</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-menu="another" class="another">
+            <h1>another</h1>
+            <div class="wrapper">
+                <div class="a_box">
+                    <div class="tap_area">
+                        <div class="tap_btn">
+                            <ul role="tablist">
+                                <li id="tab_01" aria-selected="true" aria-controls="panel_01" role="tab" class="active"><button><span>card<br>news</span></button></li>
+                                <li id="tab_02" aria-selected="false" aria-controls="panel_02" role="tab"><button><span>emoticon</span></button></li>
                             </ul>
-                        </li>
-                        <li>
-                            <strong>Work experience</strong>
-                            <ul>
-                                <li>
-                                    <span>2021.04 ~ 2023.05</span>
-                                    <strong>청주24시고려동물메디컬센터 / 병원코디네이터</strong>
-                                </li>
-                                <li>
-                                    <span>2023.08 ~ 2024.02</span>
-                                    <strong>청주김안과의원 / 병원코디네이터, 진료 어시스트</strong>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sub">
-                    <ul>
-                        <li>
-                            <strong>Certificate</strong>
-                            <ul>
-                                <li>
-                                    <span>2020.04</span>
-                                    <strong>미술심리상담지도사1급</strong>
-                                </li>
-                                <li>
-                                    <span>2021.02</span>
-                                    <strong>작업치료사</strong>
-                                </li>
-                                <li>
-                                    <span>2021.03</span>
-                                    <strong>병원코디네이터CS</strong>
-                                </li>
-                                <li>
-                                    <span>2024.07</span>
-                                    <strong>GTQ포토샵1급</strong>
-                                </li>
-                                <li>
-                                    <span>2024.09</span>
-                                    <strong>웹디자인기능사</strong>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Skill</strong>
-                            <span>HTML, CSS, Jequery,<br>Illustrator, Photoshop, Figma</span>
-                            </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="tap_cnt">
+                            <div id="panel_01" role="tabpanel" aria-labelledby="tab_01" class="active popup_d">
+                                <div class="detail">
+                                    <div class="tabborad1">
+                                        <strong>Card.news</strong>
+                                        <div class="photo"><img src="portfolio_2/images/card.news.png" alt="송원대학교 팝업 사진"></div>
+                                    </div>
+                                    <div class="tabborad2">
+                                        <div class="list1">
+                                            <div class="txt">
+                                                <strong>100% 본인 디자인</strong>
+                                                <strong>제작기간 : 1일</strong>
+                                            </div>
+                                            <div class="tool_ico1">피그마</div>
+                                        </div>
+                                        <div class="list2">
+                                            <strong>송원대학교에서 진행하는 독서감상문 공모전을 가을을 맞아 따듯한 느낌의 색감을 사용하여 공부 노트를 테마로 학생일러스트, 메모지, 책 요소 등을 직접 디자인하여 제작하였습니다.</strong>
+                                            <div class="more"><a href="#n">자세히 보기</a></div>
+                                        </div>
+                                    </div>            
+                                </div>
+                            </div>
+                            <div id="panel_02" role="tabpanel" aria-labelledby="tab_02">
+                                <div class="detail">
+                                    <div class="tabborad1">
+                                        <strong>Emoticon</strong>
+                                        <div class="photo"><a href="https://ogqmarket.naver.com/search/all?keyword=%EC%84%B8%EC%9D%B8%EB%83%A5" target="_blank" title="새창열림"><img src="portfolio_2/images/emoticon.png" alt="고양이 이모티콘 사진"></a></div>
+                                    </div>
+                                    <div class="tabborad2">
+                                        <div class="list1">
+                                            <div class="txt">
+                                                <strong>100% 본인 디자인</strong>
+                                                <strong>제작기간 : 한 달</strong>
+                                                <strong>아이패드 제작</strong>
+                                            </div>
+                                            <div class="tool_ico2">프로크리에이트</div>
+                                        </div>
+                                        <div class="list2">
+                                            <strong>고양이의 일상, 다이어리 컨셉으로 네이버 카페나 블로그에서의 사용을 목적으로 귀엽고 구분선 및 장식 디자인으로 제작하였습니다.</strong>
+                                            <div class="more"><a href="https://ogqmarket.naver.com/search/all?keyword=%EC%84%B8%EC%9D%B8%EB%83%A5" target="_blank" title="새창열림">이모티콘 보러가기</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
                 </div>
             </div>
-            <div class="iam_r">
-                <div class="photo"><img src="portfolio/images/my_photo.png" alt="황시은 사진"></div>
-                <div class="photo_sub">
-                    <strong>Design = Idea</strong>
-                    <strong>Coding = Puzzle</strong>
+            <div class="popup">
+                <div class="popup_bg"></div>
+                <div class="popup_photo">
+                    <button class="btn_close">닫기</button>
+                    <div class="photo"><img src="portfolio_2/images/card.news.png" alt="송원대학교 팝업 사진"></div>
                 </div>
             </div>
-        </section>
-        <section class="section fp-auto-height-responsive project1">
-            <div class="lp">
-                <div class="photo">
-                    <a href="songwon/index.html" target="_blank" title="새창열림"><img src="portfolio/images/Project4.png" alt="코엑스 아쿠아리움"></a>
-                </div>
-                <div class="recode"><a href="songwon/index.html" target="_blank" title="새창열림"><img src="portfolio/images/recode_navy.png" alt="레코드판"></a></div>
-            </div>
-            <div class="inner">
-                <h1>송원대학교</h1>
-                <strong>#반응형 #깔끔함 #로고대표 컬러응용</strong>
-                <strong>프로젝트기간 : 2024.10.14~10.21</strong>
-                <strong>기여도 : 100%</strong>
-                <strong>프로그램 : HTML5, css, javascript, illustrator, figma</strong>
-                <div class="color">
-                    <span>Color :</span>
-                    <ul>
-                        <li class="c1">c1</li>
-                        <li class="c2">c2</li>
-                        <li class="c3">c3</li>
-                    </ul>
-                </div>
-                <strong class="link"><a href="songwon/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive project2">
-            <div class="lp">
-                <div class="photo">
-                    <a href="samcheck/index.html" target="_blank" title="새창열림"><img src="portfolio/images/Project1.png" alt="삼척시청"></a>
-                </div>
-                <div class="recode"><a href="samcheck/index.html" target="_blank" title="새창열림"><img src="portfolio/images/recode_blue.png" alt="레코드판"></a></div>
-            </div>
-            <div class="inner">
-                <h1>삼척시청</h1>
-                <strong>#PC형 #레이아웃 #아이콘 #관광지 #자주찾는메뉴</strong>
-                <strong>프로젝트기간 : 2024.09.19~09.23</strong>
-                <strong>기여도 : 100%</strong>
-                <strong>프로그램 : HTML5, css, javascript, illustrator, figma</strong>
-                <strong>아이콘 디자인 : illustrator</strong>
-                <strong>팝업 디자인 : figma</strong>
-                <div class="color">
-                    <span>Color :</span>
-                    <ul>
-                        <li class="c1">c1</li>
-                        <li class="c2">c2</li>
-                        <li class="c3">c3</li>
-                    </ul>
-                </div>
-                <strong class="link"><a href="samcheck/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive project3">
-            <div class="lp">
-                <div class="photo">
-                    <a href="hope_foundation/index.html" target="_blank" title="새창열림"><img src="portfolio/images/Project2.png" alt="한국농어촌희망재단"></a>
-                </div>
-                <div class="recode"><a href="hope_foundation/index.html" target="_blank" title="새창열림"><img src="portfolio/images/recode_green.png" alt="레코드판"></a></div>
-            </div>
-            <div class="inner">
-                <h1>한국농어촌희망재단</h1>
-                <strong>#반응형 #아이콘 #희망 #자연 #subpage</strong>
-                <strong>프로젝트기간 : 2024.09.12~09.19</strong>
-                <strong>기여도 : 100%</strong>
-                <strong>프로그램 : HTML5, css, javascript, illustrator, figma</strong>
-                <strong>아이콘 디자인 : illustrator</strong>
-                <div class="color">
-                    <span>Color :</span>
-                    <ul>
-                        <li class="c1">c1</li>
-                        <li class="c2">c2</li>
-                        <li class="c3">c3</li>
-                        <li class="c4">c4</li>
-                    </ul>
-                </div>
-                <div class="h_link">
-                    <strong class="link"><a href="hope_foundation/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
-                    <strong class="link_2"><a href="hope_foundation/contents/intro.html" target="_blank" title="새창열림">서브페이지 인사말</a></strong>
-                    <strong class="link_3"><a href="hope_foundation/contents/mission_vision.html" target="_blank" title="새창열림">서브페이지 미션과비전</a></strong>
-                </div>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive project4">
-            <div class="lp">
-                <div class="photo">
-                    <a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림"><img src="portfolio/images/Project3.png" alt="천안시립미술관"></a>
-                </div>
-                <div class="recode"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림"><img src="portfolio/images/recode_gray.png" alt="레코드판"></a></div>
-            </div>
-            <div class="inner">
-                <h1>천안시립미술관</h1>
-                <strong>#반응형 #심플 #무채색</strong>
-                <strong>프로젝트기간 : 2024.09.04~09.11</strong>
-                <strong>기여도 : 100%</strong>
-                <strong>프로그램 : HTML5, css, javascript, illustrator, figma</strong>
-                <div class="color">
-                    <span>Color :</span>
-                    <ul>
-                        <li class="c1">c1</li>
-                        <li class="c2">c2</li>
-                        <li class="c3">c3</li>
-                        <li class="c4">c4</li>
-                        <li class="c5">c5</li>
-                    </ul>
-                </div>
-                <strong class="link"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive cardnews">
-            <div class="inner">
-                <h1>CARDNEWS</h1>
-                <div class="card">
-                    <div class="photo"><img src="portfolio/images/card_1.png" alt="카드뉴스 사진"></div>
-                </div>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive emoticon">
-            <div class="inner">
-                <h1>EMOTICON</h1>
-                <div class="d_tit">
-                    <h2><span>네이버OGQ스티커</span></h2>
-                    <a href="https://ogqmarket.naver.com/search/all?keyword=%EC%84%B8%EC%9D%B8%EB%83%A5" target="_blank" title="새창열림">스티커보러가기</a>
-                </div>
-                <ul>
-                    <li>
-                        <div class="photo"><a href="https://ogqmarket.naver.com/search/all?keyword=%EC%84%B8%EC%9D%B8%EB%83%A5" target="_blank" title="새창열림"><img src="portfolio/images/ogq_1.png" alt="스티커사진"></a></div>
-                    </li>
-                    <li>
-                        <div class="photo"><a href="https://ogqmarket.naver.com/search/all?keyword=%EC%84%B8%EC%9D%B8%EB%83%A5" target="_blank" title="새창열림"><img src="portfolio/images/ogq_2.png" alt="스티커사진"></a></div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive draw">
-            <h1>DRAW</h1>
-            <div class="inner">
-                <div class="photo"><img src="portfolio/images/illust.png" alt="일러스트 그림"></div>
-            </div>
-        </section>
-        <section class="section fp-auto-height-responsive finish">
-            <div class="photo1"><img src="portfolio/images/recode.png" alt="레코드 그림"></div>
-            <div class="photo2">
-                <img src="portfolio/images/fainal_txt.png" alt="thank you">
-            </div>
-        </section>
+        </section> 
     </div>
-    <div class="cursor">CLICK</div>
 </body>
 </html>
