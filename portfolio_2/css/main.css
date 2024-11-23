@@ -703,7 +703,7 @@
     border-radius: 30px;
     background-color: #fff;
     border: 1px solid #00249D;
-    z-index: 100;
+    z-index: 101;
 }
 .popup .popup_photo .photo {
     width: 800px;
