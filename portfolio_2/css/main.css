@@ -418,6 +418,9 @@
     background-image: url("data:image/svg+xml,%3Csvg width='74' height='67' viewBox='0 0 74 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5C1 2.79086 2.79086 1 5 1H35.7419C37.5343 1 39.108 2.19242 39.5928 3.91806L57.0352 66H1V5Z' fill='%23FFE177' stroke='%2300249D' stroke-width='2'/%3E%3Cpath d='M30.2581 13.1569H30.348L30.4364 13.1409L67.7705 6.37411C70.2252 5.92919 72.4839 7.81526 72.4839 10.31V65.9997H1V17.1569C1 14.9478 2.79086 13.1569 5 13.1569H30.2581Z' fill='%23FFD12D' stroke='%2300249D' stroke-width='2'/%3E%3C/svg%3E%0A");
     content: "";
 }
+.web .a_box .tap_area .tap_btn > ul > li.active button::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='86' height='67' viewBox='0 0 86 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M72 16V66H1V5C1 2.79086 2.79086 1 5 1H35.7419C37.5343 1 39.108 2.19242 39.5928 3.91806L41.6585 11.2705L41.8635 12H42.6212H68C70.2091 12 72 13.7909 72 16Z' fill='%23FFE177' stroke='%2300249D' stroke-width='2'/%3E%3Crect x='9' y='16' width='59' height='42' rx='5' fill='white'/%3E%3Crect x='5' y='19' width='59' height='42' rx='5' fill='%23FFF3C7'/%3E%3Cpath d='M82.9725 28.2041L72.719 65.999H1.54095L19.5916 25.5269C20.2347 24.085 21.6659 23.1562 23.2447 23.1562H50.2581L79.1121 23.1568C81.7474 23.1569 83.6625 25.6608 82.9725 28.2041Z' fill='%23FFD12D' stroke='%2300249D' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
 .web .a_box .tap_area .tap_btn > ul > li.active button {
     font-weight: 700;
     border: 1px solid #00249D;
@@ -566,6 +569,9 @@
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='74' height='67' viewBox='0 0 74 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5C1 2.79086 2.79086 1 5 1H35.7419C37.5343 1 39.108 2.19242 39.5928 3.91806L57.0352 66H1V5Z' fill='%23FFE177' stroke='%2300249D' stroke-width='2'/%3E%3Cpath d='M30.2581 13.1569H30.348L30.4364 13.1409L67.7705 6.37411C70.2252 5.92919 72.4839 7.81526 72.4839 10.31V65.9997H1V17.1569C1 14.9478 2.79086 13.1569 5 13.1569H30.2581Z' fill='%23FFD12D' stroke='%2300249D' stroke-width='2'/%3E%3C/svg%3E%0A");
     content: "";
+}
+.another .a_box .tap_area .tap_btn > ul > li.active button::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='86' height='67' viewBox='0 0 86 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M72 16V66H1V5C1 2.79086 2.79086 1 5 1H35.7419C37.5343 1 39.108 2.19242 39.5928 3.91806L41.6585 11.2705L41.8635 12H42.6212H68C70.2091 12 72 13.7909 72 16Z' fill='%23FFE177' stroke='%2300249D' stroke-width='2'/%3E%3Crect x='9' y='16' width='59' height='42' rx='5' fill='white'/%3E%3Crect x='5' y='19' width='59' height='42' rx='5' fill='%23FFF3C7'/%3E%3Cpath d='M82.9725 28.2041L72.719 65.999H1.54095L19.5916 25.5269C20.2347 24.085 21.6659 23.1562 23.2447 23.1562H50.2581L79.1121 23.1568C81.7474 23.1569 83.6625 25.6608 82.9725 28.2041Z' fill='%23FFD12D' stroke='%2300249D' stroke-width='2'/%3E%3C/svg%3E%0A");
 }
 .another .a_box .tap_area .tap_btn > ul > li.active button {
     font-weight: 700;
