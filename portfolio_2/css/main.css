@@ -149,41 +149,6 @@
 .profile .design strong::before {
     background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='33' height='33' rx='4.5' fill='%23FFD12D' stroke='%2300249D'/%3E%3Cpath d='M13.8262 21.168L16.3262 22.6113V19.7246L13.8262 21.168ZM27.2174 21.168L24.7174 19.7246V22.6113L27.2174 21.168ZM16.0762 21.418H24.9674V20.918H16.0762V21.418Z' fill='%2300249D'/%3E%3Cpath d='M20.6582 14.6094L19.2148 17.1094L22.1016 17.1094L20.6582 14.6094ZM20.6582 28.0006L22.1016 25.5006L19.2148 25.5006L20.6582 28.0006ZM20.4082 16.8594L20.4082 25.7506L20.9082 25.7506L20.9082 16.8594L20.4082 16.8594Z' fill='%2300249D'/%3E%3Cpath d='M6.94384 5.43161L19.2231 12.9732L12.5401 15.1246L7.3354 19.8365L6.94384 5.43161Z' fill='%2300249D'/%3E%3C/svg%3E%0A");
 }
-.profile .education strong span,
-.profile .work strong span,
-.profile .photoimg strong span,
-.profile .certificate strong span,
-.profile .coding strong span,
-.profile .design strong span {
-    position: relative;
-}
-.profile .education strong span::before,
-.profile .work strong span::before,
-.profile .photoimg strong span::before,
-.profile .certificate strong span::before,
-.profile .coding strong span::before,
-.profile .design strong span::before {
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 0;
-    height: 25px;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.5s;
-    opacity: 0;
-    background-color: #FFD12D;
-    content: "";
-    z-index: -1;
-}
-.profile .education:hover strong span::before,
-.profile .work:hover strong span::before,
-.profile .photoimg:hover strong span::before,
-.profile .certificate:hover strong span::before,
-.profile .coding:hover strong span::before,
-.profile .design:hover strong span::before {
-    width: 100%;
-    opacity: 100%;
-}
 .profile .education {
     position: absolute;
     left: 0;
@@ -344,6 +309,67 @@
 .profile .coding:hover,
 .profile .design:hover {
     z-index: 5;
+}
+.profile .education strong span,
+.profile .work strong span,
+.profile .photoimg strong span,
+.profile .certificate strong span,
+.profile .coding strong span,
+.profile .design strong span {
+    position: relative;
+}
+.profile .education > ul > li:last-child > em,
+.profile .certificate > ul > li:nth-child(4) > em,
+.profile .certificate > ul > li:nth-child(5) > em {
+    position: relative;
+}
+.profile .education > ul > li:last-child > em::before,
+.profile .certificate > ul > li:nth-child(4) > em::before,
+.profile .certificate > ul > li:nth-child(5) > em::before {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 0;
+    height: 25px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 0;
+    background-color: #FFD12D;
+    content: "";
+    z-index: -1;
+}
+.profile .education:hover > ul > li:last-child > em::before,
+.profile .certificate:hover > ul > li:nth-child(4) > em::before,
+.profile .certificate:hover > ul > li:nth-child(5) > em::before  {
+    width: 100%;
+    opacity: 100%;
+}
+.profile .education strong span::before,
+.profile .work strong span::before,
+.profile .photoimg strong span::before,
+.profile .certificate strong span::before,
+.profile .coding strong span::before,
+.profile .design strong span::before {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 25px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 0;
+    background-color: #FFD12D;
+    content: "";
+    z-index: -1;
+}
+.profile .education:hover strong span::before,
+.profile .work:hover strong span::before,
+.profile .photoimg:hover strong span::before,
+.profile .certificate:hover strong span::before,
+.profile .coding:hover strong span::before,
+.profile .design:hover strong span::before {
+    width: 100%;
+    opacity: 100%;
 }
 .profile .coding:hover ul li:nth-child(1):before {
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='59' height='59' rx='9.5' fill='%23EDF3FF' stroke='%2300249D'/%3E%3Cpath d='M16.1813 12.35V9.72C16.1813 8.71 16.1013 8.56 15.5213 8.46C15.2813 8.42 15.2713 7.73 15.5513 7.7C16.1713 7.62 17.7513 7.63 18.3613 7.7C18.6413 7.73 18.6413 8.39 18.3913 8.44C17.8413 8.55 17.7813 8.6 17.7813 9.57C17.7813 10.25 17.8113 10.31 18.1813 10.34C18.7713 10.39 19.5413 10.38 20.1313 10.34C20.5013 10.31 20.5313 10.25 20.5313 9.57C20.5313 8.6 20.4713 8.55 19.9213 8.44C19.6813 8.39 19.6713 7.73 19.9513 7.7C20.5613 7.63 22.1313 7.62 22.7513 7.7C23.0413 7.73 23.0313 8.42 22.7813 8.46C22.2013 8.56 22.1213 8.71 22.1213 9.72V12.35C22.1213 13.36 22.2913 13.54 22.8813 13.64C23.1213 13.68 23.1313 14.49 22.8513 14.52C22.2313 14.6 20.5613 14.59 19.9513 14.52C19.6713 14.49 19.6813 13.7 19.9213 13.65C20.4413 13.55 20.5313 13.42 20.5313 12.35V12C20.5313 11.55 20.4113 11.47 20.1313 11.45C19.5413 11.4 18.7713 11.4 18.1813 11.46C17.9013 11.49 17.7813 11.55 17.7813 12V12.35C17.7813 13.42 17.8713 13.55 18.3913 13.65C18.6413 13.7 18.6413 14.49 18.3613 14.52C17.7513 14.59 16.0713 14.6 15.4513 14.52C15.1713 14.49 15.1813 13.68 15.4213 13.64C16.0113 13.54 16.1813 13.36 16.1813 12.35ZM25.8102 7.76H27.7102C28.7302 7.76 28.9802 7.74 29.4102 7.59C29.7802 7.46 30.2102 8.06 30.2902 9.09C30.3202 9.5 30.3102 9.57 29.9902 9.69C29.7102 9.79 29.6302 9.71 29.4502 9.45C29.1202 8.97 28.9102 8.84 28.5502 8.8C28.4002 8.79 28.1102 8.8 27.9502 8.82C27.6402 8.86 27.5902 8.97 27.5902 9.44V12.4C27.5902 13.41 27.7502 13.51 28.4202 13.62C28.6702 13.66 28.6802 14.49 28.3902 14.52C27.7902 14.59 25.7302 14.6 25.1102 14.52C24.8302 14.49 24.8402 13.66 25.0802 13.62C25.7602 13.52 25.9202 13.41 25.9202 12.4V9.44C25.9202 8.97 25.8702 8.86 25.5502 8.82C25.4002 8.8 25.1002 8.79 24.9402 8.8C24.5902 8.83 24.3802 8.98 24.0502 9.45C23.8702 9.71 23.7902 9.79 23.5002 9.69C23.1902 9.57 23.1802 9.5 23.2102 9.09C23.2902 8.06 23.7202 7.46 24.0902 7.59C24.5102 7.74 24.7902 7.76 25.8102 7.76ZM30.7535 7.65C31.4835 7.53 32.3235 7.57 33.0635 7.64C33.4935 7.68 33.6235 7.8 33.7535 8.2C33.9935 8.95 34.6635 10.8 34.8935 11.41C35.0135 11.73 35.0735 11.73 35.2135 11.38C35.5735 10.49 36.1135 9.06 36.3935 8.2C36.5235 7.79 36.6535 7.68 37.0835 7.64C37.5035 7.6 38.6035 7.59 39.0035 7.65C39.2535 7.69 39.2735 8.41 39.0335 8.48C38.5635 8.62 38.4535 8.8 38.4435 9.09C38.4035 10.51 38.4435 12.15 38.4635 12.97C38.4735 13.48 38.5935 13.64 38.9835 13.7C39.2235 13.74 39.2335 14.5 38.9535 14.53C38.3935 14.6 36.9935 14.6 36.3835 14.53C36.0935 14.5 36.1035 13.74 36.3535 13.7C36.7135 13.64 36.8335 13.51 36.8435 12.97C36.8535 12.53 36.8735 11.4 36.8535 10.58C36.8435 10.34 36.7235 10.33 36.6535 10.52C36.3435 11.38 35.7035 12.89 35.2835 13.81C35.0535 14.31 34.9535 14.33 34.7135 14.33C34.5135 14.33 34.4235 14.26 34.2235 13.77C33.8135 12.78 33.1735 11.33 32.8035 10.29C32.7135 10.06 32.5835 10.09 32.5735 10.33C32.5435 10.93 32.5435 12.1 32.5635 12.94C32.5735 13.52 32.6635 13.6 33.0435 13.68C33.2735 13.72 33.2835 14.47 33.0135 14.51C32.4535 14.59 31.3835 14.6 30.7735 14.53C30.4935 14.5 30.5035 13.74 30.7435 13.7C31.1335 13.64 31.2835 13.48 31.2935 12.97C31.3135 12.15 31.3535 10.51 31.3135 9.09C31.3035 8.8 31.1935 8.62 30.7235 8.48C30.4835 8.41 30.5035 7.69 30.7535 7.65ZM42.1686 9.35V12.74C42.1686 13.32 42.2486 13.45 42.8286 13.48C43.1686 13.5 43.6586 13.5 43.9886 13.47C44.5186 13.43 44.6886 13.12 44.8986 12.81C45.0786 12.56 45.1586 12.5 45.4386 12.61C45.7586 12.73 45.7886 12.79 45.7586 13.21C45.6786 14.24 45.2486 14.81 44.8786 14.69C44.4586 14.54 44.1386 14.54 43.1186 14.54H39.8086C39.4586 14.54 39.4086 13.66 39.7386 13.59C40.1986 13.49 40.4286 13.31 40.4486 12.58C40.4786 11.41 40.4886 10.61 40.4486 9.35C40.4286 8.74 40.2986 8.51 39.8686 8.43C39.5686 8.38 39.5786 7.71 39.8986 7.67C40.6786 7.57 41.9286 7.57 42.6986 7.66C43.0986 7.71 43.0686 8.4 42.7186 8.46C42.2986 8.53 42.1686 8.64 42.1686 9.35Z' fill='%2300249D'/%3E%3Cpath d='M13 19H47L44.45 47.5L30 55L15.55 47.5L13 19Z' fill='%23F35825'/%3E%3Cpath d='M44.45 47.5L47 19H30V55L44.45 47.5Z' fill='%23F67925'/%3E%3Cpath d='M40 27H21V34.1064H38.7609L37.7609 42.3191L30.087 47L22 42.3191L21 38.6383' stroke='white' stroke-width='3'/%3E%3C/svg%3E%0A");
