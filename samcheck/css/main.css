@@ -348,9 +348,8 @@
 }
 .often_ico ul li a strong::before {
     position: absolute;
-    left: 50%;
+    left: 40px;
     top: 0;
-    transform: translate(-50%, 0);
     width: 60px;
     height: 60px;
     background-position: center center;
@@ -360,7 +359,6 @@
     transition: 0.5s;
 }
 .often_ico ul li a:hover strong::before {
-    left: 30px;
     transform: rotateY(180deg);
 }
 .often_ico ul li.call a strong::before {
